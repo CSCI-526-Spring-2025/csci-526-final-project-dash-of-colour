@@ -58,6 +58,7 @@ public class FinishLineScript : MonoBehaviour
             }
             gameDone = true;
             winPage.SetActive(true);
+            AnalyticsManager.Instance.LevelComplete();
         }
     }
 }
