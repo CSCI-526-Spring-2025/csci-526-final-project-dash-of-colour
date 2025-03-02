@@ -10,10 +10,10 @@ public class ColorController : MonoBehaviour
         if (renderer != null) 
         {
             switch (ColorData.currColor){
-                case CustomColor.BlueShade:
+                case CustomColor.PinkShade:
                     gameObject.tag = "Bouncy";
                     break;
-                case CustomColor.PinkShade:
+                case CustomColor.BlueShade:
                     gameObject.tag = "Slightly_Bouncy";
                     break;
                 default:
