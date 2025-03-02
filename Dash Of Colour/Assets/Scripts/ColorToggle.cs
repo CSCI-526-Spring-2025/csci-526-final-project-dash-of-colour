@@ -18,6 +18,9 @@ public class ColorToggle : MonoBehaviour
     {
         ColorData.currColor = colors[colorIndex];
         UpdateColorDisplay();
+
+        //Level Start instance call
+        AnalyticsManager.Instance.LevelStart();
     }
 
     // Update is called once per frame
@@ -29,6 +32,9 @@ public class ColorToggle : MonoBehaviour
             ColorData.currColor = colors[colorIndex]; // Set the new color
             Debug.Log("Current Color: " + ColorData.currColor);
             UpdateColorDisplay();
+
+            //no. of times color changes increment call
+            AnalyticsManager.Instance.IncrementColorChange();
         }
     }
 
