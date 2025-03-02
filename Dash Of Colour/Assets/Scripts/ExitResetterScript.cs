@@ -4,10 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class ExitResetterScript : MonoBehaviour
 {
+    private Vector3 startPosition;
+    private Quaternion startRotation;
+    private Rigidbody playerRB;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerRB = GetComponent<Rigidbody>();
+
         
+        startPosition = transform.position;
+        startRotation = transform.rotation;
     }
 
     // Update is called once per frame
@@ -17,9 +24,23 @@ public class ExitResetterScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name=="Player_Car")
+        if (other.CompareTag("Exit_reset"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            ResetPlayer();
+        }
+    }
+
+    void ResetPlayer()
+    {
+        
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+
+        
+        if (playerRB != null)
+        {
+            playerRB.linearVelocity = Vector3.zero;
+            playerRB.angularVelocity = Vector3.zero;
         }
     }
 }
