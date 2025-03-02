@@ -9,7 +9,19 @@ public class ColorController : MonoBehaviour
 
         if (renderer != null) 
         {
-            renderer.material.color = ColorData.currColor; 
+            switch (ColorData.currColor){
+                case CustomColor.BlueShade:
+                    gameObject.tag = "Bouncy";
+                    break;
+                case CustomColor.PinkShade:
+                    gameObject.tag = "Slightly_Bouncy";
+                    break;
+                default:
+                    gameObject.tag = "Not_Bouncy"; // this tag mainly for documentation purpose
+                    break;
+            }
+            renderer.material.color = ColorData.currColor.ToColor(); 
+            
         }
         else
         {

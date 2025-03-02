@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class ColorToggle : MonoBehaviour
 {
-    private Color[] colors = {
-        new Color32(255, 152, 222, 255),   // pink
-        new Color32(142, 185, 255, 255),   // blue
-        new Color32(128, 128, 128, 255)    // gray
+    private CustomColor[] colors = {
+        CustomColor.PinkShade,   // pink
+        CustomColor.BlueShade,   // blue
+        CustomColor.GreyShade   // gray
     };
 
     private int colorIndex = 0;
@@ -36,7 +36,7 @@ public class ColorToggle : MonoBehaviour
     {
         if (colorDisplayImage != null)
         {
-            colorDisplayImage.color = ColorData.currColor; // Update the image color
+            colorDisplayImage.color = ColorData.currColor.ToColor(); // Update the image color
         }
     }
 }

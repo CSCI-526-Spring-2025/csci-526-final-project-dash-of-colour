@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 9.0f; //Player linear speed    //Test value = 0.6
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 5.0f;
+    public float slightBounceForce = 3.5f;
     private Rigidbody playerRB;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +36,13 @@ public class PlayerController : MonoBehaviour
             foreach (ContactPoint contact in collision.contacts)
             {
                 playerRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
+        {
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                playerRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
             }
         }
     }
