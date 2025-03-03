@@ -19,11 +19,23 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         float moveAmount = Input.GetAxis("Vertical");
+        float turnAmount = Input.GetAxis("Horizontal") * rotationSpeed * Time.fixedDeltaTime;
+        if (moveAmount != 0.0f||turnAmount!=0.0f)
+        {
+            Time.timeScale = 1.0f;
+            Time.fixedDeltaTime = 0.02F * Time.timeScale;
+        }
+        else
+        {
+            Time.timeScale = 0.05f;
+            Time.fixedDeltaTime = 0.02F * Time.timeScale;
+        }
+
         Vector3 movement = transform.forward * moveAmount * speed * Time.fixedDeltaTime;
         playerRB.AddForce(transform.forward * moveAmount * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
         
         // Rotate player based on horizontal input.
-        float turnAmount = Input.GetAxis("Horizontal") * rotationSpeed * Time.fixedDeltaTime;
+        
         Quaternion turnRotation = Quaternion.Euler(0f, turnAmount, 0f);
         playerRB.MoveRotation(playerRB.rotation * turnRotation);
     }
