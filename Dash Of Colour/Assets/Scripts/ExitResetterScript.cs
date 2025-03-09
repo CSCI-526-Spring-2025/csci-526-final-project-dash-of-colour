@@ -68,7 +68,7 @@ public class ExitResetterScript : MonoBehaviour
 
             isVisible = !isVisible;
 
-            yield return new WaitForSeconds(blinkInterval);
+            yield return new WaitForSecondsRealtime(blinkInterval);
             elapsedTime += blinkInterval;
         }
 
