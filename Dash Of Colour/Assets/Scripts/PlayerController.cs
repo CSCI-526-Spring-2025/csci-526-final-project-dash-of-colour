@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
             targetIntensity = 0.7f;
             targetSmoothness = 0.5f;
 
+            transitionSpeed = 25.0f;
             isFocusMode = true;
         }
     }
@@ -114,7 +115,7 @@ public class PlayerController : MonoBehaviour
             // Disable post-processing effects
             targetIntensity = 0f;  // No vignette when focus mode ends
             targetSmoothness = 1f;
-
+            transitionSpeed = 1.25f;
             isFocusMode = false;
         }
     }
