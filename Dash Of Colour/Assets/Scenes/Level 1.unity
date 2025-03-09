@@ -1463,8 +1463,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 350, y: 180}
-  m_SizeDelta: {x: 60.1646, y: 59.5954}
+  m_AnchoredPosition: {x: 200.02293, y: 148}
+  m_SizeDelta: {x: 32.2105, y: 34.4002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282647391
 MonoBehaviour:
@@ -5445,8 +5445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7.700012, y: -10}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 150, y: -64}
+  m_SizeDelta: {x: 131.8492, y: 30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1228124933
 MonoBehaviour:
@@ -5470,7 +5470,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 20
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -5481,7 +5481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Time: 2:35.05'
+  m_Text: 'TIME: 2:35.05'
 --- !u!222 &1228124934
 CanvasRenderer:
   m_ObjectHideFlags: 0
