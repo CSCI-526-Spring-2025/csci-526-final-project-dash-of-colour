@@ -22,6 +22,7 @@ public class ColorController : MonoBehaviour
             }
             renderer.material.color = ColorData.currColor.ToColor(); 
             
+            AnalyticsManager.Instance.IncrementColorChange(ColorData.currColor.ToString());
         }
         else
         {
