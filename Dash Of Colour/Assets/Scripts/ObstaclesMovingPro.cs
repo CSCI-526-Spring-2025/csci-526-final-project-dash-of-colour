@@ -18,6 +18,7 @@ public class ObstaclesMovingPro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.instance.gameStarted) return;
         float step = speed * Time.deltaTime;
         transform.Translate(directions[currentDirectionIndex] * step);
         movedDistance += step;
