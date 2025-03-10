@@ -15,6 +15,7 @@ public class TriggerPadScript : MonoBehaviour
     void Start()
     {
         moveLimit = this.transform.localScale.z;
+       
         initialPos = block.gameObject.transform.position;
     }
 
@@ -25,11 +26,16 @@ public class TriggerPadScript : MonoBehaviour
         {
             Vector3 curPosition = block.gameObject.transform.position;
             movedDist += moveSpeed * Time.deltaTime * moveDir.x;
+            
+
             Vector3 dist = moveSpeed * Time.deltaTime * moveDir;
             block.gameObject.transform.Translate(dist);
+            Debug.Log("Current moveLimit: " + moveLimit);
+
             if (movedDist >= moveLimit)
             {
-                moveDir *= -1; 
+                moveDir *= -1;
+                
             }
             if (movedDist < 0.0)
             {
@@ -37,6 +43,7 @@ public class TriggerPadScript : MonoBehaviour
                 moveDir *= -1;
                 movedDist = 0.0f;
                 triggered = false;
+               
             }
         }
     }
