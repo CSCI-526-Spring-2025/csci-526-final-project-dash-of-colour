@@ -61,5 +61,6 @@ public class FinishLineScript : MonoBehaviour
             winPage.SetActive(true);
             AnalyticsManager.Instance.LevelComplete();
         }
+        TimerController.instance.PlayerWon();
     }
 }

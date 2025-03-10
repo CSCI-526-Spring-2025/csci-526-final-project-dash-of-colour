@@ -7,6 +7,7 @@ public class Opponent_Car : MonoBehaviour
     public float speed = 4.5f; //Player linear speed    //Test value = 0.3
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 5.0f;
+    public float slightBounceForce = 3.5f;
     private Rigidbody carRB;
     public GameObject finishGoal;
 
@@ -30,6 +31,30 @@ public class Opponent_Car : MonoBehaviour
             foreach (ContactPoint contact in collision.contacts)
             {
                 carRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
+        {
+            foreach (ContactPoint contact in collision.contacts)
+            {
+                carRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
+            }
+        }
+        else if (collision.gameObject.CompareTag("Player")) // if the other object is the player, bounce force should depend on the tag of the opponent car itself
+        {
+            if (gameObject.CompareTag("Bouncy"))
+            {
+                foreach (ContactPoint contact in collision.contacts)
+                {
+                    carRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
+                }
+            }
+            else if (gameObject.CompareTag("Slightly_Bouncy"))
+            {
+                foreach (ContactPoint contact in collision.contacts)
+                {
+                    carRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
+                }
             }
         }
     }
