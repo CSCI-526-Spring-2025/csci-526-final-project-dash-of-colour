@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody playerRB;
     private bool isFocusMode = false;
+    private Vector3 curRotation;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogError("Vignette effect not found in the post-processing volume profile.");
         }
+        curRotation = transform.forward;
     }
 
     // Update is called once per frame
@@ -47,11 +49,13 @@ public class PlayerController : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level 1")
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxis("Vertical");
-        float turnAmount = Input.GetAxis("Horizontal") * rotationSpeed * Time.fixedDeltaTime;
+        float turnAmount = Input.GetAxis("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
+        Vector3 movement = (Vector3.left * moveAmount * speed * Time.fixedDeltaTime) + (Vector3.forward * turnAmount * speed * Time.fixedDeltaTime);
         if (moveAmount != 0.0f||turnAmount!=0.0f)
         {
             if (isFocusMode)
                 ExitFocusMode();
+            playerRB.transform.rotation = Quaternion.Slerp(playerRB.transform.rotation, Quaternion.LookRotation(movement, Vector3.up), 0.1f);
         }
         else
         {
@@ -59,13 +63,12 @@ public class PlayerController : MonoBehaviour
                 EnterFocusMode();
         }
 
-        Vector3 movement = transform.forward * moveAmount * speed * Time.fixedDeltaTime;
+        
         playerRB.AddForce(movement, ForceMode.VelocityChange);
         //playerRB.MovePosition(playerRB.position + movement);
-
         // Rotate player based on horizontal input.
-        Quaternion turnRotation = Quaternion.Euler(0f, turnAmount, 0f);
-        playerRB.MoveRotation(playerRB.rotation * turnRotation);
+        //Quaternion turnRotation = Quaternion.Euler(0f, turnAmount, 0f);
+        //playerRB.transform.rotation = Quaternion.LookRotation(movement, Vector3.up);//MoveRotation(playerRB.rotation * turnRotation);
 
     }
 
