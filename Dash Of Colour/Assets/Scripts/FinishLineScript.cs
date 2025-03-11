@@ -44,21 +44,26 @@ public class FinishLineScript : MonoBehaviour
         }
         else if (other.gameObject.name=="Player_Car")//The player has passed the finish line
         {
-            //Logic to correctly determine the finish states of the player car.
-            switch(position)
-            { 
-                //Each cases decribing the finish status of the player in the race.
-                case 1: winPosText.text = "Congratulations! \nYou came 1st!";
-                        break;
-                case 2: winPosText.text = "Congratulations! \nYou came 2nd!";
-                        break;
-                case 3: winPosText.text = "Congratulations! \nYou came 3rd!";
-                        break;
-                default: winPosText.text = "Congratulations! \nYou finished the race!";
-                         break;
-            }
+            // Determine finishing position text
+            string positionText = position switch
+            {
+                1 => "Congratulations! \nYou came 1st!",
+                2 => "Congratulations! \nYou came 2nd!",
+                3 => "Congratulations! \nYou came 3rd!",
+                _ => "Congratulations! \nYou finished the race!"
+            };
+
+            // Get final time from TimerController
+            string finalTime = TimerController.instance.GetFinalTime();
+
+            // Set win page text
+            winPosText.text = $"{positionText}\n{finalTime}";
+
+            // Show win banner
             gameDone = true;
             winPage.SetActive(true);
+
+            AnalyticsManager.Instance.LevelComplete();
             AnalyticsManager.Instance.LevelComplete();
         }
         TimerController.instance.PlayerWon();
