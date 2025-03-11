@@ -25,6 +25,7 @@ public class FinishLineScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            AnalyticsManager.Instance.IncrementResetCount();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
