@@ -4,6 +4,7 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -43,7 +44,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
+        if (SceneManager.GetActiveScene().name == "Level 1")
+            if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxis("Vertical");
         float turnAmount = Input.GetAxis("Horizontal") * rotationSpeed * Time.fixedDeltaTime;
         if (moveAmount != 0.0f||turnAmount!=0.0f)

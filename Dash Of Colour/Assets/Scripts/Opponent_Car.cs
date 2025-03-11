@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Opponent_Car : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class Opponent_Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
+        if(SceneManager.GetActiveScene().name=="Level 1")
+            if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         carRB.AddForce(transform.forward * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
     }
 
