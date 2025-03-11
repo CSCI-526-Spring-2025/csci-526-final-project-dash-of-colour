@@ -10,20 +10,22 @@ public class CountdownController : MonoBehaviour
 
 	private void Start()
 	{
+		countdownTime = 3;
 		StartCoroutine(CountdownToStart());
 	}
 
 	IEnumerator CountdownToStart()
 	{
+		Debug.Log("Started countdown");
 		while (countdownTime > 0)
 		{
-			countdownDisplay.text = countdownTime.ToString();
-			yield return new WaitForSeconds(1F);
-			countdownTime--;
+            countdownDisplay.text = countdownTime.ToString();
+            yield return new WaitForSecondsRealtime(1.0f);
+            countdownTime--;
 		}
 		countdownDisplay.text = "GO!";
 		GameManager.instance.StartGame(); // Start the game for all objects
-		yield return new WaitForSeconds(0.1F);
+		yield return new WaitForSecondsRealtime(0.1F);
 		countdownDisplay.gameObject.SetActive(false);
 	}
 }

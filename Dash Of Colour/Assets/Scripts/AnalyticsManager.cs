@@ -92,7 +92,7 @@ public class AnalyticsManager : MonoBehaviour
         // Remove trailing comma and space
         colorUsageString = colorUsageString.TrimEnd(',', ' ');
 
-
+        //Google sheet with the data and visualization : https://docs.google.com/spreadsheets/d/1eKJ4FUdXgfIq9fxBZuV4D5thacuQomzFM0WYgYd3c0I/edit?usp=sharing
         StartCoroutine(PostAnalyticsData(sessionID.ToString(), colorUsageString, resetsUsed,timeTaken));
     }
 
