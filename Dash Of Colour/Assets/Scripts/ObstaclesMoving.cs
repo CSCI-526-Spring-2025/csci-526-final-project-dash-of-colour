@@ -16,6 +16,7 @@ public class ObstaclesMoving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.instance.gameStarted) return;
         float pingPongValue = Mathf.PingPong(Time.time * speed, moveDistance * 2) - moveDistance;
         transform.position = startPosition + moveDirection.normalized * pingPongValue;
     }

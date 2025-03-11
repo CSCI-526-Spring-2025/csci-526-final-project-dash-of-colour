@@ -20,6 +20,7 @@ public class Opponent_Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         carRB.AddForce(transform.forward * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
     }
 
