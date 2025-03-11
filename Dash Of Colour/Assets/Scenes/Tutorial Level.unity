@@ -147,8 +147,8 @@ Transform:
   m_GameObject: {fileID: 7722087}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.239, y: 0.58, z: -2.942}
-  m_LocalScale: {x: 0.1, y: 1.2, z: 4.3}
+  m_LocalPosition: {x: 1.81, y: 0.78, z: -2.94}
+  m_LocalScale: {x: 0.1, y: 1.5, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1124434365}
@@ -4308,7 +4308,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 68
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &865228591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4351,8 +4351,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.023099996, y: 0.025, z: 0.05252}
-  m_Center: {x: 0, y: 0.002, z: 0}
+  m_Size: {x: 0.025, y: 0.025, z: 0.06}
+  m_Center: {x: 0, y: 0.002, z: 0.001}
 --- !u!114 &865228598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6965,7 +6965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.14, y: -1.255}
+  m_AnchoredPosition: {x: 1.14, y: -1.02}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1487544432
@@ -6988,7 +6988,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Stop moving to slow time down
+  m_text: 'Stop moving=slow motion
+
+    Use short bursts of speed'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7053,7 +7055,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 6.5024357, y: 0, z: 8.674788, w: 3.0999603}
+  m_margin: {x: 5.777116, y: 0, z: 7.128742, w: 3.5078917}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -8545,7 +8547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Click to make it black and pass through
+  m_text: Click to make it gray and pass through
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9534,7 +9536,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1973589630}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 75c4a52e3f1ee1b4dad0cb72bff154f3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
