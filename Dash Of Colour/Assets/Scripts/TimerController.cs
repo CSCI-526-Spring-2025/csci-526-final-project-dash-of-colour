@@ -50,9 +50,16 @@ public class TimerController : MonoBehaviour
 	}
 
 	public void PlayerWon()
-		{
+	{
 			EndTimer();
-		}
+	}
+
+    public string GetFinalTime()
+    {
+        TimeSpan timePlaying = stopwatch.Elapsed;
+        return "Time: " + timePlaying.ToString(@"mm\:ss\.ff");
+    }
+
 
 }
 

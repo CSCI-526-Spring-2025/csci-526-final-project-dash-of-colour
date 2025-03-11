@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
+using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -44,6 +46,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "Level 1")
+            if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxis("Vertical");
         float turnAmount = Input.GetAxis("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
         Vector3 movement = (Vector3.left * moveAmount * speed * Time.fixedDeltaTime) + (Vector3.forward * turnAmount * speed * Time.fixedDeltaTime);
@@ -100,7 +104,7 @@ public class PlayerController : MonoBehaviour
             Time.fixedDeltaTime = 0.02F * Time.timeScale;
 
             // Apply post-processing effects
-            targetIntensity = 0.7f;
+            targetIntensity = 0.6f;
             targetSmoothness = 0.5f;
 
             transitionSpeed = 25.0f;

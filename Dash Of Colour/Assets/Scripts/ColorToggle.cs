@@ -34,7 +34,7 @@ public class ColorToggle : MonoBehaviour
             UpdateColorDisplay();
 
             //no. of times color changes increment call
-            AnalyticsManager.Instance.IncrementColorChange();
+            // AnalyticsManager.Instance.IncrementColorChange();
         }
     }
 
