@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Level 1")
+        if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxis("Vertical");
         float turnAmount = Input.GetAxis("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
