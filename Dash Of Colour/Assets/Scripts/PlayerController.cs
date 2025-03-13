@@ -48,8 +48,8 @@ public class PlayerController : MonoBehaviour
     {
         if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
-        float moveAmount = Input.GetAxis("Vertical");
-        float turnAmount = Input.GetAxis("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
+        float moveAmount = Input.GetAxisRaw("Vertical");
+        float turnAmount = Input.GetAxisRaw("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
         Vector3 movement = (Vector3.left * moveAmount * speed * Time.fixedDeltaTime) + (Vector3.forward * turnAmount * speed * Time.fixedDeltaTime);
         if (moveAmount != 0.0f||turnAmount!=0.0f)
         {
