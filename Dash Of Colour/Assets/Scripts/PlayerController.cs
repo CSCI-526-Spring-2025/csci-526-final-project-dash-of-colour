@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-        TimerController.instance.BeginTimer();
 
         if (postProcessingVolume.profile.TryGet(out vignette))
         {
@@ -63,13 +62,7 @@ public class PlayerController : MonoBehaviour
                 EnterFocusMode();
         }
 
-        
         playerRB.AddForce(movement, ForceMode.VelocityChange);
-        //playerRB.MovePosition(playerRB.position + movement);
-        // Rotate player based on horizontal input.
-        //Quaternion turnRotation = Quaternion.Euler(0f, turnAmount, 0f);
-        //playerRB.transform.rotation = Quaternion.LookRotation(movement, Vector3.up);//MoveRotation(playerRB.rotation * turnRotation);
-
     }
 
     void FixedUpdate()

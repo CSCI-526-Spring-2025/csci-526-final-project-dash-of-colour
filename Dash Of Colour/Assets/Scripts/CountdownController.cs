@@ -24,7 +24,8 @@ public class CountdownController : MonoBehaviour
             countdownTime--;
 		}
 		countdownDisplay.text = "GO!";
-		GameManager.instance.StartGame(); // Start the game for all objects
+        TimerController.instance.BeginTimer();
+        GameManager.instance.StartGame(); // Start the game for all objects
 		yield return new WaitForSecondsRealtime(0.1F);
 		countdownDisplay.gameObject.SetActive(false);
 	}
