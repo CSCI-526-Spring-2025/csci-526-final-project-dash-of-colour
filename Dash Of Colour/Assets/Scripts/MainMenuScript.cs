@@ -12,4 +12,9 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
     }
+
+    public void playLevel3()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
 }
