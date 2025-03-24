@@ -2,68 +2,55 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
-
-public class Opponent_Car : MonoBehaviour
+public class AINavCar : MonoBehaviour
 {
     public float speed = 4.5f; //Player linear speed    //Test value = 0.3
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 5.0f;
     public float slightBounceForce = 3.5f;
-    public float detectionDistance = 2f;
-    public float avoidStrength = 3f;
     private Rigidbody carRB;
-    public GameObject finalGoal;
+    public GameObject finishGoal;
 
-   
+    private NavMeshAgent agent; // 新增：导航代理组件引用
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         carRB = GetComponent<Rigidbody>();
-        
+        agent = GetComponent<NavMeshAgent>(); // 新增：获取 NavMeshAgent
+
+        if (finishGoal != null) // 新增：设置导航目标点
+        {
+            agent.SetDestination(finishGoal.transform.position);
+        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        /*
         if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
-        
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
-                                                           //carRB.AddForce(transform.forward * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-            if (finalGoal == null) return;
-
-
-            Vector3 toTarget = finalGoal.transform.position - transform.position;
-            toTarget.y = 0;
-            Vector3 moveDir = toTarget.normalized;
-            RaycastHit hit;
-            Vector3 avoidDir = Vector3.zero;
-            Vector3 finalDir = moveDir;
-
-
-            if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, detectionDistance))
+        carRB.AddForce(transform.forward * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);*/
+        if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
+        {
+            if (!GameManager.instance.gameStarted)
             {
-                if (!hit.collider.isTrigger && (hit.collider.CompareTag("Slightly_Bouncy") || hit.collider.CompareTag("Bouncy")))
-                {
-                    avoidDir = Vector3.Cross(Vector3.up, transform.forward) * avoidStrength;
-                    finalDir = (moveDir + avoidDir).normalized;
-                }
+                agent.isStopped = true; // 新增：游戏未开始时暂停寻路
+                return;
             }
-           
-
-            if (finalDir != Vector3.zero)
+            else
             {
-                Quaternion targetRot = Quaternion.LookRotation(finalDir);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.deltaTime);
+                agent.isStopped = false; // 新增：游戏开始恢复导航
+
+                // 新增：不断刷新目标位置（如果终点是动态的）
+                if (finishGoal != null)
+                    agent.SetDestination(finishGoal.transform.position);
             }
-
-
-            carRB.AddForce(transform.forward * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-        
-
+        }
     }
 
 
@@ -76,7 +63,7 @@ public class Opponent_Car : MonoBehaviour
             {
                 carRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
             }
-           
+
         }
         else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
         {
@@ -84,7 +71,7 @@ public class Opponent_Car : MonoBehaviour
             {
                 carRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
             }
-            
+
         }
         else if (collision.gameObject.CompareTag("Player")) // if the other object is the player, bounce force should depend on the tag of the opponent car itself
         {
@@ -104,5 +91,5 @@ public class Opponent_Car : MonoBehaviour
             }
         }
     }
-    
+
 }

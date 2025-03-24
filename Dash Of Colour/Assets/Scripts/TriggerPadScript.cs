@@ -49,7 +49,7 @@ public class TriggerPadScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.name=="Player_Car")
+        if(other.name=="Player_Car"|| other.name == "Car_Opp_1")
         {
             triggered = true;
         }

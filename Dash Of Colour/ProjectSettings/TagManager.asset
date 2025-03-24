@@ -8,6 +8,7 @@ TagManager:
   - Exit_reset
   - Slightly_Bouncy
   - Not_Bouncy
+  - FinalGoal
   layers:
   - Default
   - TransparentFX
