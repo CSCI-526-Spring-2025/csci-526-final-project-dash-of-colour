@@ -9,6 +9,7 @@ TagManager:
   - Slightly_Bouncy
   - Not_Bouncy
   - FinalGoal
+  - Road
   layers:
   - Default
   - TransparentFX

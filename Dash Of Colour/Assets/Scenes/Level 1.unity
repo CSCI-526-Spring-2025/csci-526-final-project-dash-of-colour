@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 290647982}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5030,7 +5030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18
+      value: 13.55
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5038,7 +5038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6039,7 +6039,7 @@ GameObject:
   - component: {fileID: 1082312301}
   m_Layer: 0
   m_Name: Road (2)
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6518,7 +6518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.66
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -11419,7 +11419,7 @@ GameObject:
   - component: {fileID: 2135790748}
   m_Layer: 0
   m_Name: Road (1)
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
