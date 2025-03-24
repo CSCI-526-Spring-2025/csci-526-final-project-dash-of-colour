@@ -4695,12 +4695,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1841c743fbbf34a8f05a45f86640ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotationSpeed: 30
+  speed: 3
+  rotationSpeed: 50
   bounceForce: 5
   slightBounceForce: 3.5
-  detectionDistance: 2
+  detectionDistance: 3
   avoidStrength: 3
+  avoidDuration: 1
   finalGoal: {fileID: 1018135656}
 --- !u!65 &862772268
 BoxCollider:
@@ -5029,7 +5030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.5
+      value: -0.18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5037,7 +5038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6517,7 +6518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -13.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6674,11 +6675,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  rotationSpeed: 180
+  rotationSpeed: 50
   bounceForce: 5
   slightBounceForce: 3.5
   detectionDistance: 3
-  avoidStrength: 5
+  avoidStrength: 3
+  avoidDuration: 1
   finalGoal: {fileID: 1018135656}
 --- !u!114 &1119419028
 MonoBehaviour:

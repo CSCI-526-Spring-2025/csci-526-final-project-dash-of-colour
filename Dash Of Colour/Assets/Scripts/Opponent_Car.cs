@@ -12,10 +12,14 @@ public class Opponent_Car : MonoBehaviour
     public float slightBounceForce = 3.5f;
     public float detectionDistance = 2f;
     public float avoidStrength = 3f;
+    public float avoidDuration = 1.0f;
+
     private Rigidbody carRB;
     public GameObject finalGoal;
 
-   
+    private bool isAvoiding = false;
+    private float avoidTimer = 0f;
+    private Vector3 lastAvoidDir = Vector3.zero;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +44,7 @@ public class Opponent_Car : MonoBehaviour
             toTarget.y = 0;
             Vector3 moveDir = toTarget.normalized;
             RaycastHit hit;
-            Vector3 avoidDir = Vector3.zero;
+            
             Vector3 finalDir = moveDir;
 
 
@@ -48,13 +52,27 @@ public class Opponent_Car : MonoBehaviour
             {
                 if (!hit.collider.isTrigger && (hit.collider.CompareTag("Slightly_Bouncy") || hit.collider.CompareTag("Bouncy")))
                 {
-                    avoidDir = Vector3.Cross(Vector3.up, transform.forward) * avoidStrength;
-                    finalDir = (moveDir + avoidDir).normalized;
+                Vector3 avoidDir = Vector3.Cross(Vector3.up, transform.forward).normalized * avoidStrength;
+                lastAvoidDir = avoidDir;
+                isAvoiding = true;
+                avoidTimer = avoidDuration;
                 }
             }
-           
 
-            if (finalDir != Vector3.zero)
+            if (isAvoiding)
+            {
+                avoidTimer -= Time.deltaTime;
+                if (avoidTimer <= 0f)
+                {
+                    isAvoiding = false;
+                    lastAvoidDir = Vector3.zero;
+                }
+
+                finalDir = (moveDir + lastAvoidDir).normalized;
+            }
+
+
+        if (finalDir != Vector3.zero)
             {
                 Quaternion targetRot = Quaternion.LookRotation(finalDir);
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRot, rotationSpeed * Time.deltaTime);
