@@ -18,6 +18,7 @@ public class Opponent_Car : MonoBehaviour
     public GameObject finalGoal;
 
     private bool isAvoiding = false;
+    private bool reachedGoal = false;
     private float avoidTimer = 0f;
     private Vector3 lastAvoidDir = Vector3.zero;
 
@@ -43,12 +44,22 @@ public class Opponent_Car : MonoBehaviour
             Vector3 toTarget = finalGoal.transform.position - transform.position;
             toTarget.y = 0;
             Vector3 moveDir = toTarget.normalized;
+
             RaycastHit hit;
             
             Vector3 finalDir = moveDir;
 
-            //Obstacle&wall test
-            if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, detectionDistance))
+            if (toTarget.magnitude < 1.0f)
+            {
+                reachedGoal = true;
+                return; 
+            }
+
+
+
+
+        //Obstacle&wall test
+        if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, detectionDistance))
             {
                 if (!hit.collider.isTrigger && (hit.collider.CompareTag("Slightly_Bouncy") || hit.collider.CompareTag("Bouncy"))|| hit.collider.CompareTag("Exit_reset"))
                 {
