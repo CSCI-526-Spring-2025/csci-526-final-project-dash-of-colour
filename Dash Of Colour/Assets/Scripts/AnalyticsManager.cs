@@ -23,25 +23,24 @@ public class AnalyticsManager : MonoBehaviour
         { CustomColor.GreyShade.ToString(), 0 }
     };
     
-    private const string SESSION_ID_FIELD = "entry.1437283602";
-    // private const string COLOR_CHANGE_FIELD = "entry.14387337";
+    private const string SESSION_ID_FIELD = "entry.1437283602"; // private const string COLOR_CHANGE_FIELD = "entry.14387337";
     private const string COLOR_USAGE = "entry.1221318288";
     private const string LEVEL_TIME_FIELD = "entry.187738284";
-
     private const string RESETS_USED_FIELD = "entry.1131877411";
+    
     private void Awake()
-{
-    if (Instance != null && Instance != this)
     {
-        Destroy(gameObject);
-        return;
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        sessionID = DateTime.Now.Ticks;
     }
-
-    Instance = this;
-    DontDestroyOnLoad(gameObject);
-
-    sessionID = DateTime.Now.Ticks;
-}
 
 
     public void LevelStart()
@@ -50,9 +49,7 @@ public class AnalyticsManager : MonoBehaviour
         levelStartTime = Time.time;
         // Reset color change count
         // colorChangeCount = 0;
-
         // resetsUsed = 0;
-
         colorUsage[CustomColor.PinkShade.ToString()] = 0;
         colorUsage[CustomColor.BlueShade.ToString()] = 0;
         colorUsage[CustomColor.GreyShade.ToString()] = 0;

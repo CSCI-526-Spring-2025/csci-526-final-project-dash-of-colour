@@ -53,7 +53,6 @@ public class AINavCar : MonoBehaviour
         }
     }
 
-
     private void OnCollisionEnter(Collision collision)
     {
         //Logic for adding the innovative collision mechanics of the game.

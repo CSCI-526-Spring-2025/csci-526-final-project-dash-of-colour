@@ -68,8 +68,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         UpdateVignetteEffect();
-        
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         //Logic for adding the innovative collision mechanics of the game

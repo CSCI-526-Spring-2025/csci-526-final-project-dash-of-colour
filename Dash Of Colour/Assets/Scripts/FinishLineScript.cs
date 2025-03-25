@@ -12,6 +12,7 @@ public class FinishLineScript : MonoBehaviour
     public GameObject winPage;
     public GameObject winPosObj;
     TextMeshProUGUI winPosText;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

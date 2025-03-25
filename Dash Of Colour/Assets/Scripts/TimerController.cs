@@ -6,19 +6,18 @@ using System.Diagnostics; // Add this for Stopwatch
 public class TimerController : MonoBehaviour
 {
 	public static TimerController instance;
-
 	public Text timeCounter;
-
 	private Stopwatch stopwatch;
+	private String timeDisplayText = "Time: 00:00.00";
 
-	private void Awake()
+    private void Awake()
 	{
 		instance = this;
 	}
 
 	private void Start()
 	{
-		timeCounter.text = "Time: 00:00.00";
+		timeCounter.text = timeDisplayText;
 		stopwatch = new Stopwatch();
 	}
 

@@ -12,10 +12,10 @@ public class TriggerPadScript : MonoBehaviour
     public GameObject block;
     bool triggered = false; //Has the pad been triggered or not
     Vector3 initialPos;
+
     void Start()
     {
         moveLimit = this.transform.localScale.z;
-       
         initialPos = block.gameObject.transform.position;
     }
 
@@ -47,6 +47,7 @@ public class TriggerPadScript : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.name=="Player_Car"|| other.name == "Car_Opp_1")
@@ -54,4 +55,5 @@ public class TriggerPadScript : MonoBehaviour
             triggered = true;
         }
     }
+
 }

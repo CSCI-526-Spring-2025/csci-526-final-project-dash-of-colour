@@ -8,10 +8,10 @@ public class ExitResetterScript : MonoBehaviour
     private Vector3 startPosition;
     private Quaternion startRotation;
     private Rigidbody playerRB;
-
     private Renderer playerRenderer; 
     public float blinkDuration = 2f; 
     public float blinkInterval = 0.2f; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,7 +40,6 @@ public class ExitResetterScript : MonoBehaviour
         
         transform.position = startPosition;
         transform.rotation = startRotation;
-
         
         if (playerRB != null)
         {
@@ -71,7 +70,6 @@ public class ExitResetterScript : MonoBehaviour
             yield return new WaitForSecondsRealtime(blinkInterval);
             elapsedTime += blinkInterval;
         }
-
         
         foreach (Renderer renderer in renderers)
         {

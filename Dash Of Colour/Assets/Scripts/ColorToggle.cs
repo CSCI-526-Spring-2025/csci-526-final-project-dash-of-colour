@@ -10,7 +10,6 @@ public class ColorToggle : MonoBehaviour
     };
 
     private int colorIndex = 0;
-
     public Image colorDisplayImage; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
