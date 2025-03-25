@@ -11,7 +11,6 @@ public class AnalyticsManager : MonoBehaviour
     public int colorChangeCount = 0;
     public float levelStartTime;
     [SerializeField] private string URL;
-    // private const string GOOGLE_FORM_URL = "https://docs.google.com/forms/u/0/d/1rM4mBOoHWSpxw4whg-S04rYa1HBynEd0aOD3ff24k4M/previewResponse";
     private const string GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScyfAKp0VpPWfeh1AD49GZqlhq3O3NSKNYMwiPxgNXfHeYSfA/formResponse";
 
     private int resetsUsed = 0;
@@ -60,7 +59,6 @@ public class AnalyticsManager : MonoBehaviour
         colorUsage[CustomColor.GreyShade.ToString()] = 0;
     }
 
-    //Method to increase resets 
     public void IncrementResetCount()
     {
         resetsUsed++;
