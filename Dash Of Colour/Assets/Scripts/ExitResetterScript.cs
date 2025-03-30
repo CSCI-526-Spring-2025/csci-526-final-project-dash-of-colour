@@ -20,6 +20,9 @@ public class ExitResetterScript : MonoBehaviour
 
         startPosition = transform.position;
         startRotation = transform.rotation;
+
+        // Initial check point is the start point
+        CheckPointData.currCheckPoint = new Vector3(startPosition.x, startPosition.y, 0f);
     }
 
     // Update is called once per frame
@@ -37,8 +40,10 @@ public class ExitResetterScript : MonoBehaviour
 
     void ResetPlayer()
     {
-        
-        transform.position = startPosition;
+        Debug.Log("checkpoint value: " + CheckPointData.currCheckPoint);
+        Debug.Log("start position value: " + startPosition);
+
+        transform.position = CheckPointData.currCheckPoint;
         transform.rotation = startRotation;
 
         

@@ -10,6 +10,7 @@ TagManager:
   - Not_Bouncy
   - FinalGoal
   - Road
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

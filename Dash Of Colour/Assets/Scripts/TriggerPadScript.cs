@@ -30,7 +30,7 @@ public class TriggerPadScript : MonoBehaviour
 
             Vector3 dist = moveSpeed * Time.deltaTime * moveDir;
             block.gameObject.transform.Translate(dist);
-            Debug.Log("Current moveLimit: " + moveLimit);
+            //Debug.Log("Current moveLimit: " + moveLimit);
 
             if (movedDist >= moveLimit)
             {
