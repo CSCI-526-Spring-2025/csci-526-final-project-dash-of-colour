@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System;
+using UnityEngine.SceneManagement;
+
 
 public class AnalyticsManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class AnalyticsManager : MonoBehaviour
     private long sessionID;
     public int colorChangeCount = 0;
     public float levelStartTime;
+    
     [SerializeField] private string URL;
     // private const string GOOGLE_FORM_URL = "https://docs.google.com/forms/u/0/d/1rM4mBOoHWSpxw4whg-S04rYa1HBynEd0aOD3ff24k4M/previewResponse";
     private const string GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScyfAKp0VpPWfeh1AD49GZqlhq3O3NSKNYMwiPxgNXfHeYSfA/formResponse";
@@ -99,9 +102,11 @@ public class AnalyticsManager : MonoBehaviour
     
     private IEnumerator PostAnalyticsData( string sessionID, string colorUsageString, int resetsUsed, float levelTime)
     {
+        string levelName = SceneManager.GetActiveScene().name;
         WWWForm form = new WWWForm();
         form.AddField(SESSION_ID_FIELD, sessionID);
         // form.AddField(COLOR_CHANGE_FIELD, colorChanges);
+        form.AddField("entry.1379795872", levelName);
         form.AddField(COLOR_USAGE, colorUsageString);
         form.AddField(RESETS_USED_FIELD, resetsUsed);
         form.AddField(LEVEL_TIME_FIELD, levelTime.ToString("F2"));
