@@ -34,7 +34,7 @@ public class ExitResetterScript : MonoBehaviour
     {
         if (other.CompareTag("Exit_reset"))
         {
-            ResetPlayer();
+            ResetPlayer(); // Resetting the player with tag comparision logic
         }
     }
 

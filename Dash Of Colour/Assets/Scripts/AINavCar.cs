@@ -13,15 +13,15 @@ public class AINavCar : MonoBehaviour
     private Rigidbody carRB;
     public GameObject finishGoal;
 
-    private NavMeshAgent agent; // ÐÂÔö£ºµ¼º½´úÀí×é¼þÒýÓÃ
+    private NavMeshAgent agent; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         carRB = GetComponent<Rigidbody>();
-        agent = GetComponent<NavMeshAgent>(); // ÐÂÔö£º»ñÈ¡ NavMeshAgent
+        agent = GetComponent<NavMeshAgent>(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ NavMeshAgent
 
-        if (finishGoal != null) // ÐÂÔö£ºÉèÖÃµ¼º½Ä¿±êµã
+        if (finishGoal != null) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½
         {
             agent.SetDestination(finishGoal.transform.position);
         }
@@ -39,14 +39,14 @@ public class AINavCar : MonoBehaviour
         {
             if (!GameManager.instance.gameStarted)
             {
-                agent.isStopped = true; // ÐÂÔö£ºÓÎÏ·Î´¿ªÊ¼Ê±ÔÝÍ£Ñ°Â·
+                agent.isStopped = true; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·Î´ï¿½ï¿½Ê¼Ê±ï¿½ï¿½Í£Ñ°Â·
                 return;
             }
             else
             {
-                agent.isStopped = false; // ÐÂÔö£ºÓÎÏ·¿ªÊ¼»Ö¸´µ¼º½
+                agent.isStopped = false; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·ï¿½ï¿½Ê¼ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½
 
-                // ÐÂÔö£º²»¶ÏË¢ÐÂÄ¿±êÎ»ÖÃ£¨Èç¹ûÖÕµãÊÇ¶¯Ì¬µÄ£©
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½Ä¿ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½Ç¶ï¿½Ì¬ï¿½Ä£ï¿½
                 if (finishGoal != null)
                     agent.SetDestination(finishGoal.transform.position);
             }
@@ -57,6 +57,7 @@ public class AINavCar : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Logic for adding the innovative collision mechanics of the game.
+        //Tag determines the physicality of bounce and hence the checks.
         if (collision.gameObject.CompareTag("Bouncy"))
         {
             foreach (ContactPoint contact in collision.contacts)
