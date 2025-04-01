@@ -59,7 +59,7 @@ public class FinishLineScript : MonoBehaviour
             // Set win page text
             winPosText.text = $"{positionText}\n{finalTime}";
 
-            // Show win banner
+            // Displaying the winning banner
             gameDone = true;
             winPage.SetActive(true);
 
