@@ -954,7 +954,6 @@ GameObject:
   - component: {fileID: 151582835}
   - component: {fileID: 151582834}
   - component: {fileID: 151582833}
-  - component: {fileID: 151582832}
   - component: {fileID: 151582831}
   m_Layer: 0
   m_Name: Obstacle-9
@@ -993,18 +992,6 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 0, z: -1}
   speed: 2.8
   moveDistance: 1.6
---- !u!114 &151582832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151582829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &151582833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1049,7 +1036,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
+  - {fileID: 2100000, guid: b8832701ed079b847b02568888345895, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1831,7 +1818,6 @@ GameObject:
   - component: {fileID: 275777723}
   - component: {fileID: 275777722}
   - component: {fileID: 275777721}
-  - component: {fileID: 275777720}
   - component: {fileID: 275777719}
   m_Layer: 0
   m_Name: Obstacle-3.1
@@ -1870,18 +1856,6 @@ MonoBehaviour:
   moveDirection: {x: -1, y: 0, z: 0}
   speed: 1.61
   moveDistance: 0.5
---- !u!114 &275777720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275777717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &275777721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1926,7 +1900,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c403222d955046240baa007cabb103b3, type: 2}
+  - {fileID: 2100000, guid: c723fbfcb8abbd942a96fead4a745a5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2272,7 +2246,6 @@ GameObject:
   - component: {fileID: 379149917}
   - component: {fileID: 379149916}
   - component: {fileID: 379149915}
-  - component: {fileID: 379149919}
   - component: {fileID: 379149920}
   m_Layer: 0
   m_Name: Obstacle-1.2
@@ -2325,7 +2298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c403222d955046240baa007cabb103b3, type: 2}
+  - {fileID: 2100000, guid: c723fbfcb8abbd942a96fead4a745a5d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2370,18 +2343,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 15621271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &379149919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379149914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &379149920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,7 +3873,6 @@ GameObject:
   - component: {fileID: 797933873}
   - component: {fileID: 797933872}
   - component: {fileID: 797933871}
-  - component: {fileID: 797933875}
   - component: {fileID: 797933876}
   m_Layer: 0
   m_Name: Obstacle-3.2
@@ -3965,7 +3925,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
+  - {fileID: 2100000, guid: b8832701ed079b847b02568888345895, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4010,18 +3970,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 15621271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &797933875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 797933870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &797933876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6387,7 +6335,6 @@ GameObject:
   - component: {fileID: 1108527781}
   - component: {fileID: 1108527780}
   - component: {fileID: 1108527779}
-  - component: {fileID: 1108527778}
   m_Layer: 0
   m_Name: Obstacle-5
   m_TagString: Slightly_Bouncy
@@ -6410,18 +6357,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1931055440}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &1108527778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108527775}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1108527779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6466,7 +6401,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
+  - {fileID: 2100000, guid: b8832701ed079b847b02568888345895, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8705,7 +8640,6 @@ GameObject:
   - component: {fileID: 1493241601}
   - component: {fileID: 1493241600}
   - component: {fileID: 1493241599}
-  - component: {fileID: 1493241598}
   - component: {fileID: 1493241597}
   m_Layer: 0
   m_Name: Obstacle-8
@@ -8748,18 +8682,6 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 1}
   - {x: -1, y: 0, z: 0}
   distance: 2.2
---- !u!114 &1493241598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493241595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1493241599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8804,7 +8726,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
+  - {fileID: 2100000, guid: b8832701ed079b847b02568888345895, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9946,7 +9868,6 @@ GameObject:
   - component: {fileID: 1763050820}
   - component: {fileID: 1763050819}
   - component: {fileID: 1763050818}
-  - component: {fileID: 1763050817}
   - component: {fileID: 1763050816}
   m_Layer: 0
   m_Name: Obstacle-6.2
@@ -9985,18 +9906,6 @@ MonoBehaviour:
   moveDirection: {x: 0, y: 1, z: 0}
   speed: 2
   moveDistance: 2
---- !u!114 &1763050817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763050814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1763050818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10041,7 +9950,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
+  - {fileID: 2100000, guid: b8832701ed079b847b02568888345895, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
