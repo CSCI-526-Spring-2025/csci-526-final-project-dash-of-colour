@@ -12,12 +12,14 @@ public class FinishLineScript : MonoBehaviour
     public GameObject winPage;
     public GameObject winPosObj;
     TextMeshProUGUI winPosText;
+    string sceneName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         winPage.SetActive(false);
         winPosText = winPosObj.GetComponent<TextMeshProUGUI>();
         carsFinished = new bool[2] { false, false };
+        sceneName = SceneManager.GetActiveScene().name;
     }
 
     // Update is called once per frame
@@ -45,12 +47,10 @@ public class FinishLineScript : MonoBehaviour
         else if (other.gameObject.name=="Player_Car")//The player has passed the finish line
         {
             // Determine finishing position text
-            string positionText = position switch
+            string positionText = sceneName switch
             {
-                1 => "Congratulations! \nYou came 1st!",
-                2 => "Congratulations! \nYou came 2nd!",
-                3 => "Congratulations! \nYou came 3rd!",
-                _ => "Congratulations! \nYou finished the race!"
+                "Tutorial Level" => "Congratulations! \nYou finished the tutorial!",
+                _ => "Congratulations! \nYou finished the level!"
             };
 
             // Get final time from TimerController
