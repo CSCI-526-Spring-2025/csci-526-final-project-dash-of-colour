@@ -22,7 +22,7 @@ public class ExitResetterScript : MonoBehaviour
         startRotation = transform.rotation;
 
         // Initial check point is the start point
-        CheckPointData.currCheckPoint = new Vector3(startPosition.x, startPosition.y, 0f);
+        CheckPointData.currCheckPoint = new Vector3(startPosition.x, startPosition.y, 0);
     }
 
     // Update is called once per frame

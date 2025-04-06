@@ -16,7 +16,7 @@ public class CheckPointUpdater : MonoBehaviour
     // }
     private void UpdateCheckPoint()
     {
-        Vector3 newCheckpoint = new Vector3(transform.position.x, transform.position.y, 0f);
+        Vector3 newCheckpoint = new Vector3(transform.position.x, transform.position.y, transform.position.z);
         CheckPointData.currCheckPoint = newCheckpoint;
         
         // Increment checkpoint usage in the static dictionary
