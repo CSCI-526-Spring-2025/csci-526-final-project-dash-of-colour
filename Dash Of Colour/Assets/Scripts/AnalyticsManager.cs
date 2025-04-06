@@ -25,6 +25,10 @@ public class AnalyticsManager : MonoBehaviour
         { CustomColor.BlueShade.ToString(), 0 },
         { CustomColor.GreyShade.ToString(), 0 }
     };
+
+    //Checkpoint update 
+    private const string CHECKPOINT_USAGE_FIELD = "entry.1653846425";
+
     
     private const string SESSION_ID_FIELD = "entry.1437283602";
     // private const string COLOR_CHANGE_FIELD = "entry.14387337";
@@ -95,12 +99,21 @@ public class AnalyticsManager : MonoBehaviour
         // Remove trailing comma and space
         colorUsageString = colorUsageString.TrimEnd(',', ' ');
 
+        // Combine checkpoint usage
+        string checkpointUsageString = "";
+        foreach (var kvp in CheckPointData.checkpointUsage)
+        {
+            checkpointUsageString += $"({kvp.Key.x}, {kvp.Key.y}, {kvp.Key.z}): {kvp.Value}, ";
+        }
+        checkpointUsageString = checkpointUsageString.TrimEnd(',', ' ');
+
+
         //Google sheet with the data and visualization : https://docs.google.com/spreadsheets/d/1eKJ4FUdXgfIq9fxBZuV4D5thacuQomzFM0WYgYd3c0I/edit?usp=sharing
-        StartCoroutine(PostAnalyticsData(sessionID.ToString(), colorUsageString, resetsUsed,timeTaken));
+        StartCoroutine(PostAnalyticsData(sessionID.ToString(), colorUsageString, resetsUsed,timeTaken, checkpointUsageString));
     }
 
     
-    private IEnumerator PostAnalyticsData( string sessionID, string colorUsageString, int resetsUsed, float levelTime)
+    private IEnumerator PostAnalyticsData( string sessionID, string colorUsageString, int resetsUsed, float levelTime, string checkpointUsage)
     {
         string levelName = SceneManager.GetActiveScene().name;
         WWWForm form = new WWWForm();
@@ -110,6 +123,7 @@ public class AnalyticsManager : MonoBehaviour
         form.AddField(COLOR_USAGE, colorUsageString);
         form.AddField(RESETS_USED_FIELD, resetsUsed);
         form.AddField(LEVEL_TIME_FIELD, levelTime.ToString("F2"));
+        form.AddField(CHECKPOINT_USAGE_FIELD, checkpointUsage);
         Debug.Log(sessionID);
 
 

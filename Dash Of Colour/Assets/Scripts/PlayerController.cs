@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 9.0f; //Player linear speed    //Test value = 0.6
+    public float speed = 0.1f; //9.0f; //Player linear speed    //Test value = 0.6
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 10.0f;
     public float slightBounceForce = 3.5f;
