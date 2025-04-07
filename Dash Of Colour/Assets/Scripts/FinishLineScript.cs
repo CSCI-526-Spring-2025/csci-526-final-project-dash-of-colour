@@ -57,8 +57,14 @@ public class FinishLineScript : MonoBehaviour
             string finalTime = TimerController.instance.GetFinalTime();
 
             // Set win page text
-            winPosText.text = $"{positionText}\n{finalTime}";
-
+            if (sceneName.Equals("Tutorial Level"))
+            {
+                winPosText.text = $"{positionText}";
+            }
+            else
+            {
+                winPosText.text = $"{positionText}\n{finalTime}";
+            }
             // Displaying the winning banner
             gameDone = true;
             winPage.SetActive(true);
