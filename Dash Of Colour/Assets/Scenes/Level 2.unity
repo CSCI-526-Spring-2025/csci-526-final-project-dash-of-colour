@@ -6471,9 +6471,6 @@ PrefabInstance:
       addedObject: {fileID: 862772267}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 862772272}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 862772275}
   m_SourcePrefab: {fileID: 100100000, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
 --- !u!1 &862772265 stripped
@@ -6554,18 +6551,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 68
   m_CollisionDetection: 0
---- !u!114 &862772272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862772265}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &862772275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9063,9 +9048,6 @@ PrefabInstance:
       addedObject: {fileID: 1119419025}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1119419028}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1119419031}
   m_SourcePrefab: {fileID: 100100000, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
 --- !u!1 &1119419017 stripped
@@ -9146,18 +9128,6 @@ MonoBehaviour:
   avoidStrength: 3
   avoidDuration: 1
   finalGoal: {fileID: 1018135656}
---- !u!114 &1119419028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1119419017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1119419031
 MonoBehaviour:
   m_ObjectHideFlags: 0
