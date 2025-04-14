@@ -30,7 +30,7 @@ public class TriggerPadScript : MonoBehaviour
 
             Vector3 dist = moveSpeed * Time.deltaTime * moveDir;
             block.gameObject.transform.Translate(dist);
-            //Debug.Log("Current moveLimit: " + moveLimit);
+            Debug.Log("Current moveLimit: " + moveLimit);
 
             if (movedDist >= moveLimit)
             {
@@ -42,16 +42,23 @@ public class TriggerPadScript : MonoBehaviour
                 block.gameObject.transform.position = initialPos;
                 moveDir *= -1;
                 movedDist = 0.0f;
-                triggered = false;
+                //triggered = false;
                
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.name=="Player_Car"|| other.name == "Car_Opp_1")
         {
             triggered = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+{
+    if (other.name == "Player_Car" || other.name == "Car_Opp_1")
+    {
+        triggered = false;
+    }
+}
 }
