@@ -200,8 +200,8 @@ GameObject:
   - component: {fileID: 4081656}
   - component: {fileID: 4081655}
   m_Layer: 0
-  m_Name: Road (36)
-  m_TagString: Untagged
+  m_Name: Road (33)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -810,8 +810,8 @@ GameObject:
   - component: {fileID: 22349129}
   - component: {fileID: 22349128}
   m_Layer: 0
-  m_Name: Road (32)
-  m_TagString: Untagged
+  m_Name: Road (22)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3145,8 +3145,8 @@ GameObject:
   - component: {fileID: 160391576}
   - component: {fileID: 160391575}
   m_Layer: 0
-  m_Name: Road (30)
-  m_TagString: Untagged
+  m_Name: Road (26)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,40 +3459,40 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 290647985}
-  - {fileID: 175675288}
-  - {fileID: 1519166296}
-  - {fileID: 1026269231}
-  - {fileID: 583188205}
-  - {fileID: 309873547}
-  - {fileID: 316956117}
-  - {fileID: 1396345120}
-  - {fileID: 2119730085}
-  - {fileID: 380177642}
-  - {fileID: 1303216928}
-  - {fileID: 1518341601}
-  - {fileID: 2040171179}
-  - {fileID: 575061905}
-  - {fileID: 481817033}
-  - {fileID: 22349127}
-  - {fileID: 253660222}
-  - {fileID: 1442527591}
-  - {fileID: 1444570622}
-  - {fileID: 2065993999}
   - {fileID: 465051877}
-  - {fileID: 759551213}
+  - {fileID: 2065993999}
+  - {fileID: 175675288}
+  - {fileID: 1444570622}
   - {fileID: 764416128}
   - {fileID: 2135790751}
-  - {fileID: 160391574}
+  - {fileID: 759551213}
+  - {fileID: 1519166296}
+  - {fileID: 1026269231}
+  - {fileID: 253660222}
+  - {fileID: 1442527591}
+  - {fileID: 583188205}
+  - {fileID: 1518341601}
+  - {fileID: 309873547}
+  - {fileID: 575061905}
+  - {fileID: 316956117}
+  - {fileID: 2040171179}
+  - {fileID: 2119730085}
+  - {fileID: 481817033}
+  - {fileID: 380177642}
+  - {fileID: 22349127}
+  - {fileID: 1303216928}
+  - {fileID: 1979031178}
   - {fileID: 1162252068}
-  - {fileID: 1438141048}
-  - {fileID: 805924738}
-  - {fileID: 4081654}
-  - {fileID: 1903712210}
+  - {fileID: 160391574}
   - {fileID: 947881225}
+  - {fileID: 1438141048}
+  - {fileID: 1903712210}
+  - {fileID: 805924738}
   - {fileID: 577061374}
   - {fileID: 1731334558}
+  - {fileID: 4081654}
   - {fileID: 1432187485}
-  - {fileID: 1979031178}
+  - {fileID: 1396345120}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &175675287
@@ -3508,8 +3508,8 @@ GameObject:
   - component: {fileID: 175675290}
   - component: {fileID: 175675289}
   m_Layer: 0
-  m_Name: Road (3)
-  m_TagString: Untagged
+  m_Name: Road (4)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5147,8 +5147,8 @@ GameObject:
   - component: {fileID: 253660224}
   - component: {fileID: 253660223}
   m_Layer: 0
-  m_Name: Road (9)
-  m_TagString: Untagged
+  m_Name: Road (11)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5834,7 +5834,7 @@ GameObject:
   - component: {fileID: 290647982}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6082,8 +6082,8 @@ GameObject:
   - component: {fileID: 309873549}
   - component: {fileID: 309873548}
   m_Layer: 0
-  m_Name: Road (13)
-  m_TagString: Untagged
+  m_Name: Road (15)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6190,8 +6190,8 @@ GameObject:
   - component: {fileID: 316956119}
   - component: {fileID: 316956118}
   m_Layer: 0
-  m_Name: Road (15)
-  m_TagString: Untagged
+  m_Name: Road (17)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6897,8 +6897,8 @@ GameObject:
   - component: {fileID: 380177644}
   - component: {fileID: 380177643}
   m_Layer: 0
-  m_Name: Road (27)
-  m_TagString: Untagged
+  m_Name: Road (21)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8665,8 +8665,8 @@ GameObject:
   - component: {fileID: 465051879}
   - component: {fileID: 465051878}
   m_Layer: 0
-  m_Name: Road (5)
-  m_TagString: Untagged
+  m_Name: Road (2)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9326,8 +9326,8 @@ GameObject:
   - component: {fileID: 481817035}
   - component: {fileID: 481817034}
   m_Layer: 0
-  m_Name: Road (18)
-  m_TagString: Untagged
+  m_Name: Road (20)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10869,8 +10869,8 @@ GameObject:
   - component: {fileID: 575061907}
   - component: {fileID: 575061906}
   m_Layer: 0
-  m_Name: Road (14)
-  m_TagString: Untagged
+  m_Name: Road (16)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10883,9 +10883,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575061904}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -64.936005, y: 0, z: 14.61}
-  m_LocalScale: {x: 14.608292, y: 0.1, z: 4.2727003}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -64.936005, y: 0, z: 14.610003}
+  m_LocalScale: {x: 14.608293, y: 0.1, z: 4.2727003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 174846773}
@@ -10977,8 +10977,8 @@ GameObject:
   - component: {fileID: 577061376}
   - component: {fileID: 577061375}
   m_Layer: 0
-  m_Name: Road (21)
-  m_TagString: Untagged
+  m_Name: Road (31)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11085,8 +11085,8 @@ GameObject:
   - component: {fileID: 583188207}
   - component: {fileID: 583188206}
   m_Layer: 0
-  m_Name: Road (10)
-  m_TagString: Untagged
+  m_Name: Road (13)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14315,8 +14315,8 @@ GameObject:
   - component: {fileID: 759551215}
   - component: {fileID: 759551214}
   m_Layer: 0
-  m_Name: Road (4)
-  m_TagString: Untagged
+  m_Name: Road (8)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14492,8 +14492,8 @@ GameObject:
   - component: {fileID: 764416130}
   - component: {fileID: 764416129}
   m_Layer: 0
-  m_Name: Road (7)
-  m_TagString: Untagged
+  m_Name: Road (6)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15339,8 +15339,8 @@ GameObject:
   - component: {fileID: 805924740}
   - component: {fileID: 805924739}
   m_Layer: 0
-  m_Name: Road (38)
-  m_TagString: Untagged
+  m_Name: Road (30)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17040,13 +17040,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1841c743fbbf34a8f05a45f86640ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotationSpeed: 30
+  speed: 4
+  rotationSpeed: 25
   bounceForce: 5
   slightBounceForce: 3.5
   detectionDistance: 2
-  avoidStrength: 3
-  avoidDuration: 1
+  avoidStrength: 1.5
+  avoidDuration: 0.8
   finalGoal: {fileID: 1820572135}
 --- !u!65 &862772268
 BoxCollider:
@@ -19676,8 +19676,8 @@ GameObject:
   - component: {fileID: 947881227}
   - component: {fileID: 947881226}
   m_Layer: 0
-  m_Name: Road (34)
-  m_TagString: Untagged
+  m_Name: Road (27)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20394,8 +20394,8 @@ GameObject:
   - component: {fileID: 1026269233}
   - component: {fileID: 1026269232}
   m_Layer: 0
-  m_Name: Road (20)
-  m_TagString: Untagged
+  m_Name: Road (10)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21968,13 +21968,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1841c743fbbf34a8f05a45f86640ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotationSpeed: 30
+  speed: 4
+  rotationSpeed: 25
   bounceForce: 5
   slightBounceForce: 3.5
-  detectionDistance: 4
-  avoidStrength: 3
-  avoidDuration: 1
+  detectionDistance: 2
+  avoidStrength: 1.5
+  avoidDuration: 0.8
   finalGoal: {fileID: 1820572135}
 --- !u!114 &1119419031
 MonoBehaviour:
@@ -23164,8 +23164,8 @@ GameObject:
   - component: {fileID: 1162252070}
   - component: {fileID: 1162252069}
   m_Layer: 0
-  m_Name: Road (33)
-  m_TagString: Untagged
+  m_Name: Road (25)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26211,8 +26211,8 @@ GameObject:
   - component: {fileID: 1303216930}
   - component: {fileID: 1303216929}
   m_Layer: 0
-  m_Name: Road (19)
-  m_TagString: Untagged
+  m_Name: Road (23)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27252,8 +27252,8 @@ GameObject:
   - component: {fileID: 1396345122}
   - component: {fileID: 1396345121}
   m_Layer: 0
-  m_Name: Road (31)
-  m_TagString: Untagged
+  m_Name: Road (35)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27900,8 +27900,8 @@ GameObject:
   - component: {fileID: 1432187487}
   - component: {fileID: 1432187486}
   m_Layer: 0
-  m_Name: Road (29)
-  m_TagString: Untagged
+  m_Name: Road (34)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28391,8 +28391,8 @@ GameObject:
   - component: {fileID: 1438141050}
   - component: {fileID: 1438141049}
   m_Layer: 0
-  m_Name: Road (35)
-  m_TagString: Untagged
+  m_Name: Road (28)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28499,8 +28499,8 @@ GameObject:
   - component: {fileID: 1442527593}
   - component: {fileID: 1442527592}
   m_Layer: 0
-  m_Name: Road (11)
-  m_TagString: Untagged
+  m_Name: Road (12)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28728,8 +28728,8 @@ GameObject:
   - component: {fileID: 1444570624}
   - component: {fileID: 1444570623}
   m_Layer: 0
-  m_Name: Road (6)
-  m_TagString: Untagged
+  m_Name: Road (5)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30357,8 +30357,8 @@ GameObject:
   - component: {fileID: 1518341603}
   - component: {fileID: 1518341602}
   m_Layer: 0
-  m_Name: Road (12)
-  m_TagString: Untagged
+  m_Name: Road (14)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30465,8 +30465,8 @@ GameObject:
   - component: {fileID: 1519166298}
   - component: {fileID: 1519166297}
   m_Layer: 0
-  m_Name: Road (8)
-  m_TagString: Untagged
+  m_Name: Road (9)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33644,8 +33644,8 @@ GameObject:
   - component: {fileID: 1731334560}
   - component: {fileID: 1731334559}
   m_Layer: 0
-  m_Name: Road (22)
-  m_TagString: Untagged
+  m_Name: Road (32)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35755,8 +35755,8 @@ GameObject:
   - component: {fileID: 1903712212}
   - component: {fileID: 1903712211}
   m_Layer: 0
-  m_Name: Road (24)
-  m_TagString: Untagged
+  m_Name: Road (29)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36924,8 +36924,8 @@ GameObject:
   - component: {fileID: 1979031180}
   - component: {fileID: 1979031179}
   m_Layer: 0
-  m_Name: Road (37)
-  m_TagString: Untagged
+  m_Name: Road (24)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38258,8 +38258,8 @@ GameObject:
   - component: {fileID: 2040171181}
   - component: {fileID: 2040171180}
   m_Layer: 0
-  m_Name: Road (16)
-  m_TagString: Untagged
+  m_Name: Road (18)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39276,8 +39276,8 @@ GameObject:
   - component: {fileID: 2065994001}
   - component: {fileID: 2065994000}
   m_Layer: 0
-  m_Name: Road (2)
-  m_TagString: Untagged
+  m_Name: Road (3)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39828,8 +39828,8 @@ GameObject:
   - component: {fileID: 2119730087}
   - component: {fileID: 2119730086}
   m_Layer: 0
-  m_Name: Road (17)
-  m_TagString: Untagged
+  m_Name: Road (19)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40165,8 +40165,8 @@ GameObject:
   - component: {fileID: 2135790749}
   - component: {fileID: 2135790748}
   m_Layer: 0
-  m_Name: Road (1)
-  m_TagString: Untagged
+  m_Name: Road (7)
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
