@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 9.0f; //Player linear speed    //Test value = 0.6
+    private float speedMultiplier = 1f;
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 10.0f;
     public float slightBounceForce = 3.5f;
@@ -49,7 +50,7 @@ public class PlayerController : MonoBehaviour
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxisRaw("Vertical");
         float turnAmount = Input.GetAxisRaw("Horizontal");// * rotationSpeed * Time.fixedDeltaTime;
-        Vector3 movement = (Vector3.left * moveAmount * speed * Time.fixedDeltaTime) + (Vector3.forward * turnAmount * speed * Time.fixedDeltaTime);
+        Vector3 movement = (Vector3.left * moveAmount * speed * speedMultiplier * Time.fixedDeltaTime) + (Vector3.forward * turnAmount * speed * speedMultiplier * Time.fixedDeltaTime);
         if (moveAmount != 0.0f||turnAmount!=0.0f)
         {
             if (isFocusMode)
@@ -128,6 +129,11 @@ public class PlayerController : MonoBehaviour
             vignette.intensity.value = Mathf.Lerp(vignette.intensity.value, targetIntensity, Time.deltaTime * transitionSpeed);
             vignette.smoothness.value = Mathf.Lerp(vignette.smoothness.value, targetSmoothness, Time.deltaTime * transitionSpeed);
         }
+    }
+
+    public void SetSpeedMultiplier(float multiplier)
+    {
+        speedMultiplier = multiplier;
     }
 
 }
