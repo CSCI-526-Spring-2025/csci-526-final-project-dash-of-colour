@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class MainMenuScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    //Loading respective scenes based on selections
     public void playTutorial()
     {
         SceneManager.LoadScene("Tutorial Level");
