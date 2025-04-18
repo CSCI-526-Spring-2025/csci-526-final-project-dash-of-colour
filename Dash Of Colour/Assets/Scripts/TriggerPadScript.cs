@@ -9,12 +9,14 @@ public class TriggerPadScript : MonoBehaviour
     public float moveSpeed = 8.0f;
     private float moveLimit = 0.0f;
     private float movedDist = 0.0f;
+
+    public float moveFactor = 1.0f;
     public GameObject block;
     bool triggered = false; //Has the pad been triggered or not
     Vector3 initialPos;
     void Start()
     {
-        moveLimit = this.transform.localScale.z;
+        moveLimit = this.transform.localScale.z * moveFactor;
        
         initialPos = block.gameObject.transform.position;
     }
