@@ -6495,7 +6495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1841c743fbbf34a8f05a45f86640ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 7
   rotationSpeed: 50
   bounceForce: 5
   slightBounceForce: 3.5
@@ -9120,7 +9120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f1841c743fbbf34a8f05a45f86640ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 7
   rotationSpeed: 50
   bounceForce: 5
   slightBounceForce: 3.5

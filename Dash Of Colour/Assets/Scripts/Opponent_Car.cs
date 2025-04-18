@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Opponent_Car : MonoBehaviour
 {
-    public float speed = 4.5f; //Player linear speed    //Test value = 0.3
+    public float speed = 9f; //Player linear speed    //Test value = 0.3
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 5.0f;
     public float slightBounceForce = 3.5f;
