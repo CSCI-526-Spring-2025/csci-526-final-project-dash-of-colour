@@ -88,8 +88,23 @@ public class PlayerController : MonoBehaviour
                 playerRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
             }
         }
-    }
+        // else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
+        // {
+        //     foreach (ContactPoint contact in collision.contacts)
+        //     {
+        //         playerRB.linearVelocity = Vector3.zero;
+        //         playerRB.angularVelocity = Vector3.zero;
 
+        //         StartCoroutine(StickTemporarily(0.7f));
+        //     }
+        // }
+    }
+    private IEnumerator StickTemporarily(float duration)
+    {
+        playerRB.isKinematic = true;
+        yield return new WaitForSeconds(duration);
+        playerRB.isKinematic = false;
+    }
     void EnterFocusMode()
     {
         if (!isFocusMode)
