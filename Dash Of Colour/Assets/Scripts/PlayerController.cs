@@ -46,6 +46,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ExitResetterScript.isFalling)
+        {
+            if (isFocusMode)
+                ExitFocusMode(); // Force exit focus if falling
+            return; // Skip input while falling
+        }
         if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
             if (!GameManager.instance.gameStarted) return; // Stop movement before countdown ends
         float moveAmount = Input.GetAxisRaw("Vertical");

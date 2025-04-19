@@ -12,6 +12,7 @@ public class ExitResetterScript : MonoBehaviour
     private Renderer playerRenderer; 
     public float blinkDuration = 2f; 
     public float blinkInterval = 0.2f; 
+    public static bool isFalling = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,19 +41,35 @@ public class ExitResetterScript : MonoBehaviour
 
     void ResetPlayer()
     {
-        Debug.Log("checkpoint value: " + CheckPointData.currCheckPoint);
-        Debug.Log("start position value: " + startPosition);
+        StartCoroutine(FallThenReset());
+    }
 
+    IEnumerator FallThenReset()
+    {
+        if(playerRB.CompareTag("Player"))
+            isFalling = true;
+
+        if (playerRB != null)
+        {
+            playerRB.useGravity = true; 
+            playerRB.constraints = RigidbodyConstraints.None; // Remove Y-axis freeze
+        }
+
+        yield return new WaitForSeconds(1f); // wait duration
+
+        // Now reset the position
         transform.position = CheckPointData.currCheckPoint;
         transform.rotation = startRotation;
 
-        
         if (playerRB != null)
         {
             playerRB.linearVelocity = Vector3.zero;
             playerRB.angularVelocity = Vector3.zero;
-        }
 
+            playerRB.useGravity = false; // Re-disable gravity
+            playerRB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation; 
+        }
+        isFalling = false;
         StartCoroutine(BlinkEffect());
     }
 
