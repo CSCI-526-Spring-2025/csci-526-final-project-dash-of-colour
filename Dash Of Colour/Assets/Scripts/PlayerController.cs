@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private bool isFocusMode = false;
     private Vector3 curRotation;
 
+    public ParticleSystem trailParticles;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -50,6 +51,8 @@ public class PlayerController : MonoBehaviour
         {
             if (isFocusMode)
                 ExitFocusMode(); // Force exit focus if falling
+            if (trailParticles.isPlaying)
+                trailParticles.Stop();
             return; // Skip input while falling
         }
         if (LevelData.validLevels.Contains(SceneManager.GetActiveScene().name))
@@ -62,11 +65,15 @@ public class PlayerController : MonoBehaviour
             if (isFocusMode)
                 ExitFocusMode();
             playerRB.transform.rotation = Quaternion.Slerp(playerRB.transform.rotation, Quaternion.LookRotation(movement, Vector3.up), 0.1f);
+            if (!trailParticles.isPlaying)
+                trailParticles.Play();
         }
         else
         {
             if (!isFocusMode)
                 EnterFocusMode();
+            if (trailParticles.isPlaying)
+                trailParticles.Stop();
         }
 
         playerRB.AddForce(movement, ForceMode.VelocityChange);
