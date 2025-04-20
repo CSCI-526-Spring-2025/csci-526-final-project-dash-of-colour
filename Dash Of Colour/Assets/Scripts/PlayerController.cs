@@ -134,8 +134,8 @@ public class PlayerController : MonoBehaviour
             Time.fixedDeltaTime = 0.02F * Time.timeScale;
 
             // Apply post-processing effects
-            targetIntensity = 0.6f;
-            targetSmoothness = 0.5f;
+            targetIntensity = 0.55f;
+            targetSmoothness = 0.15f;
 
             transitionSpeed = 25.0f;
             isFocusMode = true;

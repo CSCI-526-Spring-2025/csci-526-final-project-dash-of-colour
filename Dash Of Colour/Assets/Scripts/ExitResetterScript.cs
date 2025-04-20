@@ -65,22 +65,20 @@ public class ExitResetterScript : MonoBehaviour
             playerRB.useGravity = true; 
             playerRB.constraints = RigidbodyConstraints.None; // Remove Y-axis freeze
             yield return new WaitForSeconds(1f); // wait duration
-        }
 
-        // Now reset the position
-        transform.position = CheckPointData.currCheckPoint;
-        transform.rotation = startRotation;
+            // Now reset the position
+            transform.position = CheckPointData.currCheckPoint;
+            transform.rotation = startRotation;
 
-        if (playerRB.CompareTag("Player")&&playerRB != null)
-        {
             playerRB.linearVelocity = Vector3.zero;
             playerRB.angularVelocity = Vector3.zero;
             player_controls.speed = orig_Speed; //Return to original speed when giving control back to the player
 
             playerRB.useGravity = false; // Re-disable gravity
-            playerRB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation; 
+            playerRB.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+
+            isFalling = false;
         }
-        isFalling = false;
         StartCoroutine(BlinkEffect());
     }
 
