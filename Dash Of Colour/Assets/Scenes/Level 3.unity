@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 21154697}
   m_Layer: 0
   m_Name: Wall (18)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1309,7 +1309,7 @@ GameObject:
   - component: {fileID: 48464666}
   m_Layer: 0
   m_Name: Obstacle-1.1 (12)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 73007247}
   m_Layer: 0
   m_Name: Wall (11)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2124,7 +2124,7 @@ GameObject:
   - component: {fileID: 106857026}
   m_Layer: 0
   m_Name: Wall_3 (7)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3182,7 +3182,7 @@ GameObject:
   - component: {fileID: 165356906}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3692,7 +3692,7 @@ GameObject:
   - component: {fileID: 200147995}
   m_Layer: 0
   m_Name: Obstacle-1.2 (10)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4871,7 +4871,7 @@ GameObject:
   - component: {fileID: 255852727}
   m_Layer: 0
   m_Name: Obstacle-1.1 (1)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5324,7 +5324,7 @@ GameObject:
   - component: {fileID: 283035559}
   m_Layer: 0
   m_Name: Obstacle-1.1 (6)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5926,7 +5926,7 @@ GameObject:
   - component: {fileID: 327322137}
   m_Layer: 0
   m_Name: Obstacle-1.1 (10)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7039,7 +7039,7 @@ GameObject:
   - component: {fileID: 410930691}
   m_Layer: 0
   m_Name: Wall (16)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7281,7 +7281,7 @@ GameObject:
   - component: {fileID: 427026507}
   m_Layer: 0
   m_Name: Wall_5 (3)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8216,7 +8216,7 @@ GameObject:
   - component: {fileID: 467887442}
   m_Layer: 0
   m_Name: Obstacle-1.1 (7)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8879,7 +8879,7 @@ GameObject:
   - component: {fileID: 482535545}
   m_Layer: 0
   m_Name: Obstacle-1.2 (5)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9085,7 +9085,7 @@ GameObject:
   - component: {fileID: 528991020}
   m_Layer: 0
   m_Name: Obstacle-8 (7)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10645,7 +10645,7 @@ GameObject:
   - component: {fileID: 595847114}
   m_Layer: 0
   m_Name: Obstacle-1.1 (15)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11076,7 +11076,7 @@ GameObject:
   - component: {fileID: 613287046}
   m_Layer: 0
   m_Name: Wall (8)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11984,7 +11984,7 @@ GameObject:
   - component: {fileID: 661796062}
   m_Layer: 0
   m_Name: Obstacle-1.1 (8)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12523,7 +12523,7 @@ GameObject:
   - component: {fileID: 672288352}
   m_Layer: 0
   m_Name: Obstacle-8 (8)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13279,7 +13279,7 @@ GameObject:
   - component: {fileID: 715777767}
   m_Layer: 0
   m_Name: Obstacle-1.1 (9)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15379,7 +15379,7 @@ GameObject:
   - component: {fileID: 823463734}
   m_Layer: 0
   m_Name: Obstacle-1.2 (8)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18312,7 +18312,7 @@ GameObject:
   - component: {fileID: 942261625}
   m_Layer: 0
   m_Name: Wall (5)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18433,7 +18433,7 @@ GameObject:
   - component: {fileID: 945014918}
   m_Layer: 0
   m_Name: Wall (9)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18731,7 +18731,7 @@ GameObject:
   - component: {fileID: 973722320}
   m_Layer: 0
   m_Name: Wall_3 (11)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19751,7 +19751,7 @@ GameObject:
   - component: {fileID: 1064505170}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19941,7 +19941,7 @@ GameObject:
   - component: {fileID: 1071715952}
   m_Layer: 0
   m_Name: Wall (10)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21304,7 +21304,7 @@ GameObject:
   - component: {fileID: 1148574110}
   m_Layer: 0
   m_Name: Wall (14)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22084,7 +22084,7 @@ GameObject:
   - component: {fileID: 1189238254}
   m_Layer: 0
   m_Name: Wall_3 (8)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22837,7 +22837,7 @@ GameObject:
   - component: {fileID: 1227302521}
   m_Layer: 0
   m_Name: Obstacle-1.1 (11)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23138,7 +23138,7 @@ GameObject:
   - component: {fileID: 1242558639}
   m_Layer: 0
   m_Name: Obstacle-1.2 (11)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24648,7 +24648,7 @@ GameObject:
   - component: {fileID: 1322979969}
   m_Layer: 0
   m_Name: Obstacle-8 (9)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25065,7 +25065,7 @@ GameObject:
   - component: {fileID: 1366607284}
   m_Layer: 0
   m_Name: Obstacle-1.2 (6)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25201,7 +25201,7 @@ GameObject:
   - component: {fileID: 1367859146}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25538,7 +25538,7 @@ GameObject:
   - component: {fileID: 1388835011}
   m_Layer: 0
   m_Name: Wall_3 (9)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27253,7 +27253,7 @@ GameObject:
   - component: {fileID: 1454754253}
   m_Layer: 0
   m_Name: Wall (6)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37245,7 +37245,7 @@ GameObject:
   - component: {fileID: 1791248024}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37366,7 +37366,7 @@ GameObject:
   - component: {fileID: 1814694899}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38231,7 +38231,7 @@ GameObject:
   - component: {fileID: 1874806923}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38352,7 +38352,7 @@ GameObject:
   - component: {fileID: 1883318033}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39093,7 +39093,7 @@ GameObject:
   - component: {fileID: 1924509673}
   m_Layer: 0
   m_Name: Wall_2 (2)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39377,7 +39377,7 @@ GameObject:
   - component: {fileID: 1934184015}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40760,7 +40760,7 @@ GameObject:
   - component: {fileID: 2019796195}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41247,7 +41247,7 @@ GameObject:
   - component: {fileID: 2041864331}
   m_Layer: 0
   m_Name: Obstacle-1.1 (2)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41792,7 +41792,7 @@ GameObject:
   - component: {fileID: 2057591040}
   m_Layer: 0
   m_Name: Wall (12)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42228,7 +42228,7 @@ GameObject:
   - component: {fileID: 2072702959}
   m_Layer: 0
   m_Name: Obstacle-1.2 (9)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42552,7 +42552,7 @@ GameObject:
   - component: {fileID: 2117707776}
   m_Layer: 0
   m_Name: Obstacle-5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
