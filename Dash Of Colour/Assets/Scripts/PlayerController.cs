@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ExitResetterScript.isFalling)
+        if (ExitResetterScript.isFalling || BouncyPlatform.isBouncing)
         {
             if (isFocusMode)
                 ExitFocusMode(); // Force exit focus if falling
