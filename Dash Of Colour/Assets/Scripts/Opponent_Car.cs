@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Opponent_Car : MonoBehaviour
 {
     public float speed = 4.5f; //Player linear speed    //Test value = 0.3
+    private float origSpeed = 4.5f;
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 5.0f;
     public float slightBounceForce = 3.5f;
@@ -21,13 +22,16 @@ public class Opponent_Car : MonoBehaviour
     private bool reachedGoal = false;
     private float avoidTimer = 0f;
     private Vector3 lastAvoidDir = Vector3.zero;
+    private Vector3 startPosition;
+    private Quaternion startRot;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         carRB = GetComponent<Rigidbody>();
-        
-
+        origSpeed = speed;
+        startPosition = transform.position;
+        startRot = transform.rotation;
     }
 
     // Update is called once per frame
@@ -54,9 +58,6 @@ public class Opponent_Car : MonoBehaviour
                 reachedGoal = true;
                 return; 
             }
-
-
-
 
         //Obstacle&wall test
         if (Physics.Raycast(transform.position + Vector3.up * 0.5f, transform.forward, out hit, detectionDistance))
@@ -136,27 +137,33 @@ public class Opponent_Car : MonoBehaviour
         {
             foreach (ContactPoint contact in collision.contacts)
             {
-                carRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
+                carRB.AddForce(-1 * contact.normal * slightBounceForce, ForceMode.Impulse);
+                if (speed >= origSpeed)
+                    StartCoroutine(StickTemporarily(1.0f, 0.25f));
             }
-            
+
         }
         else if (collision.gameObject.CompareTag("Player")) // if the other object is the player, bounce force should depend on the tag of the opponent car itself
         {
-            if (gameObject.CompareTag("Bouncy"))
+            foreach (ContactPoint contact in collision.contacts)
             {
-                foreach (ContactPoint contact in collision.contacts)
-                {
-                    carRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
-                }
+                carRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
             }
-            else if (gameObject.CompareTag("Slightly_Bouncy"))
-            {
-                foreach (ContactPoint contact in collision.contacts)
-                {
-                    carRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
-                }
-            }
+            
         }
     }
-    
+    private IEnumerator StickTemporarily(float duration, float speedChange)
+    {
+        speed *= speedChange;
+        yield return new WaitForSeconds(duration);
+        speed = origSpeed;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Exit_reset"))
+        {
+            transform.position = startPosition;
+            transform.rotation = startRot;
+        }
+    }
 }
