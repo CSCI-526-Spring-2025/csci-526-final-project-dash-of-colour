@@ -715,7 +715,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f57ed165894a2454bb77fd27644b8d36, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2795,7 +2795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &913442597
@@ -3129,7 +3128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &1124434364
@@ -3585,7 +3583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1211727579
@@ -4092,7 +4089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1410118990

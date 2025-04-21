@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 9.0f; //Player linear speed    //Test value = 0.6
-    private float origSpeed = 9.0f;
     private float speedMultiplier = 1f;
     public float rotationSpeed = 30.0f; //Player rotation speed
     public float bounceForce = 10.0f;
@@ -31,7 +30,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-        origSpeed = speed;
 
         if (postProcessingVolume.profile.TryGet(out vignette))
         {
@@ -94,37 +92,31 @@ public class PlayerController : MonoBehaviour
             foreach (ContactPoint contact in collision.contacts)
             {
                 playerRB.AddForce(contact.normal * bounceForce, ForceMode.Impulse);
-                if(speed<=origSpeed)
-                    StartCoroutine(StickTemporarily(1.0f, 1.1f));
             }
         }
         else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
         {
             foreach (ContactPoint contact in collision.contacts)
             {
-                playerRB.AddForce(-1*contact.normal * slightBounceForce, ForceMode.Impulse);
-                if (speed >= origSpeed)
-                    StartCoroutine(StickTemporarily(1.0f, 0.25f));
+                playerRB.AddForce(contact.normal * slightBounceForce, ForceMode.Impulse);
             }
         }
-        /*
-        else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
-        {
-             foreach (ContactPoint contact in collision.contacts)
-             {
-                 playerRB.linearVelocity = Vector3.zero;
-                 playerRB.angularVelocity = Vector3.zero;
+        // else if (collision.gameObject.CompareTag("Slightly_Bouncy"))
+        // {
+        //     foreach (ContactPoint contact in collision.contacts)
+        //     {
+        //         playerRB.linearVelocity = Vector3.zero;
+        //         playerRB.angularVelocity = Vector3.zero;
 
-                 StartCoroutine(StickTemporarily(0.7f));
-             }
-         }
-        */
+        //         StartCoroutine(StickTemporarily(0.7f));
+        //     }
+        // }
     }
-    private IEnumerator StickTemporarily(float duration, float speedChange)
+    private IEnumerator StickTemporarily(float duration)
     {
-        speed *= speedChange;
+        playerRB.isKinematic = true;
         yield return new WaitForSeconds(duration);
-        speed = origSpeed;
+        playerRB.isKinematic = false;
     }
     void EnterFocusMode()
     {
@@ -134,8 +126,8 @@ public class PlayerController : MonoBehaviour
             Time.fixedDeltaTime = 0.02F * Time.timeScale;
 
             // Apply post-processing effects
-            targetIntensity = 0.55f;
-            targetSmoothness = 0.15f;
+            targetIntensity = 0.6f;
+            targetSmoothness = 0.5f;
 
             transitionSpeed = 25.0f;
             isFocusMode = true;
