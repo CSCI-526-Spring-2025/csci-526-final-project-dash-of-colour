@@ -1286,6 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &166122208
@@ -3683,6 +3684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &531118053
@@ -5174,6 +5176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!1001 &862772264
@@ -5375,6 +5378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &863570338
@@ -5805,6 +5809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &869140934
@@ -6028,6 +6033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &896231772
@@ -6217,6 +6223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &910972571
@@ -6421,7 +6428,7 @@ GameObject:
   - component: {fileID: 914172520}
   m_Layer: 0
   m_Name: BouncyPlatform 1
-  m_TagString: Not_Bouncy
+  m_TagString: Slightly_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6441,7 +6448,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6470,7 +6477,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 772ebf7b0dea0d44da700f50b36b065a, type: 2}
+  - {fileID: 2100000, guid: 564d83d0e8498994db9c70ba1f11f3c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6527,8 +6534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29e1665bba0da68ea9a2c4fadee0d01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDuration1: 0.5
+  moveDuration1: 1
   moveDuration2: 1
+  moveDuration3: 1
   bounceScale: 1.2
   bounceDuration: 0.3
 --- !u!114 &914172520
@@ -6540,7 +6548,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 914172514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c479e05af1e9de3eae7e4d02e28392b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &921364088
@@ -7961,6 +7969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &1120936379
@@ -8154,6 +8163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98bdb9671750c63499d1e93645362a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player_controls: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1137431219
@@ -12151,7 +12161,7 @@ Transform:
   m_GameObject: {fileID: 1967087696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.27, y: 5, z: 0}
+  m_LocalPosition: {x: 24.27, y: -10, z: 0}
   m_LocalScale: {x: 19.014696, y: 0.1, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
