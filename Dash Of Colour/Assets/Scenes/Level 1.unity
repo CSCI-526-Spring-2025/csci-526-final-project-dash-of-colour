@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 41812501}
   m_Layer: 0
   m_Name: Obstacle-3 (2)
-  m_TagString: Bouncy
+  m_TagString: Slightly_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1147,7 +1147,7 @@ GameObject:
   - component: {fileID: 109886694}
   m_Layer: 0
   m_Name: Obstacle-3 (3)
-  m_TagString: Bouncy
+  m_TagString: Slightly_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

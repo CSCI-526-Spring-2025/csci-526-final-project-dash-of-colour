@@ -22,4 +22,8 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level 3");
     }
+    public void playLevel4()
+    {
+        SceneManager.LoadScene("Level 4");
+    }
 }
