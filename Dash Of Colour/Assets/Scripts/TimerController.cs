@@ -11,7 +11,9 @@ public class TimerController : MonoBehaviour
 
 	private Stopwatch stopwatch;
 
-	private void Awake()
+    private float levelStartTime;
+
+    private void Awake()
 	{
 		instance = this;
 	}
@@ -34,7 +36,13 @@ public class TimerController : MonoBehaviour
 		UpdateDisplay();  // Final update to show last time.
 	}
 
-	private void Update()
+    public float GetFinalTimeAsFloat()
+    {
+        return Time.time - levelStartTime;
+    }
+
+
+    private void Update()
 	{
 		if (stopwatch.IsRunning)
 		{
