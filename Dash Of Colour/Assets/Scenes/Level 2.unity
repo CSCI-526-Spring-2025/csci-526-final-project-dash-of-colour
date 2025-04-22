@@ -9697,6 +9697,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 865228598}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865228599}
   m_SourcePrefab: {fileID: 100100000, guid: e155865befd9bd947b1fd4167e26884f, type: 3}
 --- !u!1 &865228588 stripped
 GameObject:
@@ -9790,6 +9793,18 @@ MonoBehaviour:
   player_controls: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
+--- !u!114 &865228599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865228588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037a8fa8ccb53d4c490e5269971ce1c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &896231769
 GameObject:
   m_ObjectHideFlags: 0
@@ -10673,7 +10688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &968851111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14993,7 +15008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1369532172
 MonoBehaviour:
   m_ObjectHideFlags: 0
