@@ -15,6 +15,7 @@ public class ExitResetterScript : MonoBehaviour
     public float blinkDuration = 2f; 
     public float blinkInterval = 0.2f; 
     public static bool isFalling = false;
+    private bool isResetting = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,8 +38,9 @@ public class ExitResetterScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Exit_reset"))
+        if (!isResetting && other.CompareTag("Exit_reset"))
         {
+            isResetting = true;
             ResetPlayer(); // Resetting the player with tag comparision logic
         }
     }
@@ -79,6 +81,8 @@ public class ExitResetterScript : MonoBehaviour
 
             isFalling = false;
         }
+
+        isResetting = false;
         StartCoroutine(BlinkEffect());
     }
 
