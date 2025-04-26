@@ -12,11 +12,14 @@ public class FinishLineScript : MonoBehaviour
     public GameObject winPage;
     public GameObject winPosObj;
     TextMeshProUGUI winPosText;
+    public GameObject pauseMenu;
+    private bool isPaused = false; 
     string sceneName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         winPage.SetActive(false);
+        pauseMenu.SetActive(false);
         winPosText = winPosObj.GetComponent<TextMeshProUGUI>();
         carsFinished = new bool[2] { false, false };
         sceneName = SceneManager.GetActiveScene().name;
@@ -30,7 +33,32 @@ public class FinishLineScript : MonoBehaviour
             AnalyticsManager.Instance.IncrementResetCount();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+            // Debug.LogError("Esc Button pressed");
+        }
+
     }
+
+    private void TogglePause()
+    {
+        isPaused = !isPaused;
+        pauseMenu.SetActive(isPaused);
+
+        if (isPaused)
+        {
+            Time.timeScale = 0f; // Pause the game
+            TimerController.instance.PauseTimer();
+        }
+        else
+        {
+            Time.timeScale = 1f; // Resume the game
+            TimerController.instance.ResumeTimer();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         //Logic to correctly determine the finish states of the opponent cars

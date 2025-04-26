@@ -10,6 +10,7 @@ public class TimerController : MonoBehaviour
 	public Text timeCounter;
 
 	private Stopwatch stopwatch;
+	private bool isTimerPaused = false;
 
 	private void Awake()
 	{
@@ -60,6 +61,23 @@ public class TimerController : MonoBehaviour
         return "Time: " + timePlaying.ToString(@"mm\:ss\.ff");
     }
 
+	public void PauseTimer()
+    {
+        if (stopwatch.IsRunning)
+        {
+            stopwatch.Stop();
+            isTimerPaused = true;
+        }
+    }
+
+    public void ResumeTimer()
+    {
+        if (isTimerPaused)
+        {
+            stopwatch.Start();
+            isTimerPaused = false;
+        }
+    }
 
 }
 
