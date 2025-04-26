@@ -416,7 +416,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 39175877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &40700418
@@ -5581,7 +5581,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5702,7 +5702,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5931,7 +5931,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19852,7 +19852,7 @@ GameObject:
   - component: {fileID: 650620241}
   m_Layer: 0
   m_Name: Wall_4
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19872,7 +19872,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -19940,7 +19940,7 @@ Transform:
   m_GameObject: {fileID: 650620236}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.0414, y: -0.16, z: -5.03}
+  m_LocalPosition: {x: -5.0414, y: -0.01, z: -5.03}
   m_LocalScale: {x: 10.2172985, y: 0.3484815, z: 0.275}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20132,7 +20132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &675407062
 Transform:
   m_ObjectHideFlags: 0
@@ -20232,7 +20232,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 675407061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &679367382
@@ -21424,7 +21424,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -22356,7 +22356,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -24591,7 +24591,7 @@ GameObject:
   - component: {fileID: 864156206}
   m_Layer: 0
   m_Name: Wall_5
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24611,7 +24611,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -25310,7 +25310,7 @@ GameObject:
   - component: {fileID: 889965331}
   m_Layer: 0
   m_Name: Obstacle-3 (26)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25324,7 +25324,7 @@ Transform:
   m_GameObject: {fileID: 889965329}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.1553273, z: -0, w: 0.98786306}
-  m_LocalPosition: {x: -31.77, y: 9.837, z: 19.55}
+  m_LocalPosition: {x: -31.77, y: 10, z: 19.55}
   m_LocalScale: {x: -7.5868416, y: 0.32358888, z: 0.15121962}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25357,7 +25357,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -25618,7 +25618,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 898810339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &904801263
@@ -28284,7 +28284,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -28526,7 +28526,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -28876,7 +28876,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -35470,7 +35470,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245323856}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1247079611
@@ -37941,7 +37941,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1374161664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1374894736
@@ -39644,7 +39644,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1470734194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1473422957
@@ -40008,7 +40008,7 @@ GameObject:
   - component: {fileID: 1482448507}
   m_Layer: 0
   m_Name: Obstacle-3 (35)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40055,7 +40055,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -40618,7 +40618,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -44715,7 +44715,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -47997,7 +47997,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -48897,7 +48897,7 @@ Transform:
   m_GameObject: {fileID: 1830117507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.18676703, z: -0, w: 0.9824043}
-  m_LocalPosition: {x: -16.08, y: 9.974, z: 14.55}
+  m_LocalPosition: {x: -17.2, y: 9.974, z: 14.99}
   m_LocalScale: {x: 4.3124785, y: 0.37096423, z: 0.40323278}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49250,7 +49250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1842659488
 Transform:
   m_ObjectHideFlags: 0
@@ -49350,7 +49350,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1842659487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1844980615
@@ -50220,7 +50220,7 @@ GameObject:
   - component: {fileID: 1883563347}
   m_Layer: 0
   m_Name: Obstacle-3 (36)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50267,7 +50267,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -51204,7 +51204,7 @@ GameObject:
   - component: {fileID: 1914122709}
   m_Layer: 0
   m_Name: Obstacle-3 (27)
-  m_TagString: Slightly_Bouncy
+  m_TagString: Not_Bouncy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51218,7 +51218,7 @@ Transform:
   m_GameObject: {fileID: 1914122707}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.009474766, z: -0, w: 0.9999551}
-  m_LocalPosition: {x: -40.09, y: 9.837, z: 14.15}
+  m_LocalPosition: {x: -40.09, y: 10, z: 14.15}
   m_LocalScale: {x: -7.4880047, y: 0.32358888, z: 0.15121962}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51251,7 +51251,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -53586,7 +53586,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1954065656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1954271209
@@ -57956,7 +57956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &935218305502335302
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -58147,7 +58147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &3652748906747457182
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58179,7 +58179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3652748906747457181}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!33 &3826391320894418055
@@ -58341,7 +58341,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 901310864140152837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!33 &6424368876713110289
@@ -58403,7 +58403,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7677912580136736608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8756690678816935163
@@ -58425,7 +58425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &8756690678816935164
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -58457,7 +58457,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8756690678816935163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0670db33b0ae2003b6ac280e3add23e, type: 3}
+  m_Script: {fileID: 11500000, guid: 73e896daeadec004d8e560e3a1d2418f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
