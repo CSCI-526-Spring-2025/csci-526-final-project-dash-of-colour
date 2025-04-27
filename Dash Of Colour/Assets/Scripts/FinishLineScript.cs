@@ -1,8 +1,9 @@
-using System;
+﻿using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class FinishLineScript : MonoBehaviour
 {
@@ -13,8 +14,11 @@ public class FinishLineScript : MonoBehaviour
     public GameObject winPosObj;
     TextMeshProUGUI winPosText;
     public GameObject pauseMenu;
-    private bool isPaused = false; 
+    private bool isPaused = false;
+    public Leaderboard leaderboard;
     string sceneName;
+    private bool gameFinish = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +27,16 @@ public class FinishLineScript : MonoBehaviour
         winPosText = winPosObj.GetComponent<TextMeshProUGUI>();
         carsFinished = new bool[2] { false, false };
         sceneName = SceneManager.GetActiveScene().name;
+        
+        if (leaderboard == null)
+        {
+            leaderboard = FindObjectOfType<Leaderboard>();
+            if (leaderboard == null)
+            {
+                Debug.LogError("Leaderboard not found in scene!");
+            }
+        }
+
     }
 
     // Update is called once per frame
@@ -74,31 +88,86 @@ public class FinishLineScript : MonoBehaviour
         }
         else if (other.gameObject.name=="Player_Car")//The player has passed the finish line
         {
-            // Determine finishing position text
-            string positionText = sceneName switch
+            if(!gameFinish)
             {
-                "Tutorial Level" => "Congratulations! \nYou finished the tutorial!",
-                _ => "Congratulations! \nYou finished the level!"
-            };
-
-            // Get final time from TimerController
-            string finalTime = TimerController.instance.GetFinalTime();
-
-            // Set win page text
-            if (sceneName.Equals("Tutorial Level"))
-            {
-                winPosText.text = $"{positionText}";
+                StartCoroutine(HandlePlayerFinish());
             }
-            else
-            {
-                winPosText.text = $"{positionText}\n{finalTime}";
-            }
-            // Displaying the winning banner
-            gameDone = true;
-            winPage.SetActive(true);
+            
+            gameFinish = true;
 
-            AnalyticsManager.Instance.LevelComplete();
+
         }
         TimerController.instance.PlayerWon();
     }
+
+    private IEnumerator HandlePlayerFinish()
+    {
+        string positionText = sceneName switch
+        {
+            "Tutorial Level" => "Congratulations! \nYou finished the tutorial!",
+            _ => "Congratulations! You finished the level!"
+        };
+
+        string curretnFinalTime = TimerController.instance.GetFinalTime();
+
+        if (sceneName.Equals("Tutorial Level"))
+        {
+            winPosText.text = $"{positionText}";
+        }
+        else
+        {
+            string levelName = SceneManager.GetActiveScene().name;
+            float finalTime = TimerController.instance.GetFinalTimeAsFloat();
+            string dummyName = DummyNameGenerator.GenerateName();
+
+            winPosText.text = $"{positionText}\n{curretnFinalTime}";
+
+            leaderboard.SubmitScore(levelName, dummyName, finalTime);
+
+            // === Fetch Current Position ===
+            bool fetchCurrentDone = false;
+            int playerPosition = -1;
+
+            leaderboard.FetchCurrentPosition(levelName, finalTime, pos =>
+            {
+                playerPosition = pos;
+                fetchCurrentDone = true;
+            });
+
+            yield return new WaitUntil(() => fetchCurrentDone);
+
+            if (playerPosition != -1)
+            {
+                string posText = $"\nYour position: {playerPosition} ({dummyName})";
+                winPosText.text += posText;
+            }
+            else
+            {
+                string posText = "\nCould not predict your position!";
+                winPosText.text += posText;
+            }
+
+            // === Fetch Top Scores ===
+            bool fetchTopDone = false;
+
+            leaderboard.FetchTopScores(levelName, top5 =>
+            {
+                string board = "\nLeader Board (Top 5):\n";
+                foreach (var entry in top5)
+                    board += $"{entry.player_name} - {entry.time_seconds:F2}s\n";
+                winPosText.text += "\n" + board;
+                fetchTopDone = true;
+            });
+
+            yield return new WaitUntil(() => fetchTopDone);
+          
+        }
+
+        // Now safe to show the winning page
+        gameDone = true;
+        winPage.SetActive(true);
+
+        AnalyticsManager.Instance.LevelComplete();
+    }
+
 }
