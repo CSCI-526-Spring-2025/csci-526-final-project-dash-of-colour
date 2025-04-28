@@ -19204,7 +19204,7 @@ MonoBehaviour:
   winPage: {fileID: 1529431937}
   winPosObj: {fileID: 1914937442}
   pauseMenu: {fileID: 83654851}
-  leaderboard: {fileID: 0}
+  leaderboard: {fileID: 2080623691}
 --- !u!1 &1885005017
 GameObject:
   m_ObjectHideFlags: 0

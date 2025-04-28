@@ -28635,6 +28635,52 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1333363259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333363261}
+  - component: {fileID: 1333363260}
+  m_Layer: 0
+  m_Name: LeaderBoardText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1333363260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333363259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed84bf3c12eacee46b02604a61a42d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  supabaseUrl: https://pbzqzzgkpseijrjwickx.supabase.co
+  supabaseKey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBienF6emdrcHNlaWpyandpY2t4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzMDEyMDUsImV4cCI6MjA2MDg3NzIwNX0.XbCmXzMEyEMrGNgpomrP-Hy8rxx1th78aoAp5KmTse4
+--- !u!4 &1333363261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333363259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 642.91113, y: 284.78342, z: -467.74994}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344804096
 GameObject:
   m_ObjectHideFlags: 0
@@ -42252,7 +42298,7 @@ Transform:
   m_GameObject: {fileID: 1781565249}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -109.84, y: 0, z: 40.25}
+  m_LocalPosition: {x: -109.99, y: 0, z: 40.25}
   m_LocalScale: {x: 18.951042, y: 0.25, z: 0.275}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42764,7 +42810,7 @@ MonoBehaviour:
   winPage: {fileID: 1529431937}
   winPosObj: {fileID: 1914937442}
   pauseMenu: {fileID: 366717793}
-  leaderboard: {fileID: 0}
+  leaderboard: {fileID: 1333363260}
 --- !u!1 &1827930420
 GameObject:
   m_ObjectHideFlags: 0
@@ -48911,3 +48957,4 @@ SceneRoots:
   - {fileID: 728937545}
   - {fileID: 1952891386}
   - {fileID: 366717797}
+  - {fileID: 1333363261}
