@@ -12,7 +12,9 @@ public class FinishLineScript : MonoBehaviour
     bool[] carsFinished;
     public GameObject winPage;
     public GameObject winPosObj;
+    public GameObject leaderboardObj;
     TextMeshProUGUI winPosText;
+    TextMeshProUGUI leaderboardText;
     public GameObject pauseMenu;
     private bool isPaused = false;
     public Leaderboard leaderboard;
@@ -25,6 +27,7 @@ public class FinishLineScript : MonoBehaviour
         winPage.SetActive(false);
         pauseMenu.SetActive(false);
         winPosText = winPosObj.GetComponent<TextMeshProUGUI>();
+        leaderboardText = leaderboardObj.GetComponent<TextMeshProUGUI>();
         carsFinished = new bool[2] { false, false };
         sceneName = SceneManager.GetActiveScene().name;
         
@@ -152,10 +155,10 @@ public class FinishLineScript : MonoBehaviour
 
             leaderboard.FetchTopScores(levelName, top5 =>
             {
-                string board = "\nLeader Board (Top 5):\n";
+                string board = "";
                 foreach (var entry in top5)
                     board += $"{entry.player_name} - {entry.time_seconds:F2}s\n";
-                winPosText.text += "\n" + board;
+                leaderboardText.text += "\n" + board;
                 fetchTopDone = true;
             });
 
