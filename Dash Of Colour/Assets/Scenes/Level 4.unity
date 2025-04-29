@@ -919,6 +919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &17633207
@@ -1189,6 +1190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &24770002
@@ -1396,6 +1398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &40700421
@@ -1796,6 +1799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &44989292
@@ -2284,6 +2288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &65611815
@@ -2439,6 +2444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &69058089
@@ -2967,6 +2973,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &105245159
@@ -3349,6 +3356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &119667668
@@ -4381,6 +4389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &177680060
@@ -4450,6 +4459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &179545507
@@ -5362,6 +5372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &224701875
@@ -7306,6 +7317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &312013143
@@ -8373,6 +8385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &360657931
@@ -8836,6 +8849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &385477058
@@ -9081,6 +9095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &387407056
@@ -11182,6 +11197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &469502294
@@ -11969,6 +11985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &500874782
@@ -16918,6 +16935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &528838060
@@ -18325,6 +18343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &599705885
@@ -18802,6 +18821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &622532599
@@ -19921,6 +19941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &652040623
@@ -20405,6 +20426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &687460229
@@ -21874,6 +21896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &786663766
@@ -22119,6 +22142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &788954846
@@ -22188,6 +22212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &790508383
@@ -22543,6 +22568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &809866904
@@ -23622,6 +23648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &822786337
@@ -24179,6 +24206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!1001 &862772264
@@ -24381,6 +24409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &863570338
@@ -24815,6 +24844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &865228599
@@ -25379,6 +25409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &896231772
@@ -25814,6 +25845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &910972571
@@ -26922,6 +26954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &955342402
@@ -27409,6 +27442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &982430280
@@ -27661,6 +27695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &995002737
@@ -28124,6 +28159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1015351669
@@ -28193,6 +28229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1017717957
@@ -30160,6 +30197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1080830907
@@ -30912,6 +30950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1100786901
@@ -31580,6 +31619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!1 &1120936379
@@ -31983,6 +32023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1125541926
@@ -32299,6 +32340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1126756160
@@ -32642,6 +32684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1137431219
@@ -32845,6 +32888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1140345541
@@ -32947,6 +32991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1144047985
@@ -35590,6 +35635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1250611001
@@ -36320,6 +36366,115 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271919886}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1272351566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272351570}
+  - component: {fileID: 1272351569}
+  - component: {fileID: 1272351568}
+  - component: {fileID: 1272351567}
+  m_Layer: 0
+  m_Name: Elevator_Symbol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1272351567
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272351566}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1272351568
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272351566}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 12e29024132bbc04d8876ada1dd18909, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1272351569
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272351566}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1272351570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272351566}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 4.0523458, y: 2.25, z: -2.28}
+  m_LocalScale: {x: 0.075, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1275665296
 GameObject:
   m_ObjectHideFlags: 0
@@ -36366,6 +36521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1275665299
@@ -36510,6 +36666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1286902218
@@ -37253,6 +37410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1346369875
@@ -37322,6 +37480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1347394362
@@ -37763,6 +37922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1362748972
@@ -38284,6 +38444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1390803184
@@ -38474,6 +38635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1408340188
@@ -38543,6 +38705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1413560586
@@ -38834,6 +38997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1423160046
@@ -41296,6 +41460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1519546144
@@ -42058,6 +42223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1568054531
@@ -42276,6 +42442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1583827197
@@ -42361,6 +42528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1583939650
@@ -42870,6 +43038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1606874447
@@ -43540,6 +43709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1623893101
@@ -43656,6 +43826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1625255600
@@ -43967,6 +44138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1637427015
@@ -44586,6 +44758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1649730958
@@ -44897,6 +45070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1658390925
@@ -45534,6 +45708,92 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674931434}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1677882546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677882550}
+  - component: {fileID: 1677882549}
+  - component: {fileID: 1677882548}
+  m_Layer: 0
+  m_Name: Cylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1677882548
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677882546}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4ff4ad03b7b214b4a9d73e41e65ea4d6, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1677882549
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677882546}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1677882550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677882546}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.81, y: 0, z: 0.02}
+  m_LocalScale: {x: 4.17, y: 10, z: 4.89}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1683172040
 GameObject:
   m_ObjectHideFlags: 0
@@ -46346,6 +46606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1707940561
@@ -46548,6 +46809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1710390973
@@ -46858,6 +47120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1715760297
@@ -47451,6 +47714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1745441025
@@ -47749,6 +48013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1753903470
@@ -48662,6 +48927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1801230622
@@ -48864,6 +49130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 0.8
   blinkInterval: 0.1
 --- !u!114 &1806372018
@@ -49160,6 +49427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1823606154
@@ -50790,6 +51058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1886129255
@@ -51231,6 +51500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1900235110
@@ -54812,6 +55082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &1996861570
@@ -55330,6 +55601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2017801104
@@ -55595,6 +55867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2034762937
@@ -56166,6 +56439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2047430017
@@ -56572,6 +56846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2059358405
@@ -57394,6 +57669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2096524050
@@ -57692,6 +57968,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2105707562
@@ -57761,6 +58038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2106825110
@@ -58374,6 +58652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2139734009
@@ -58443,6 +58722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_controls: {fileID: 0}
+  leaderboard: {fileID: 0}
   blinkDuration: 2
   blinkInterval: 0.2
 --- !u!65 &2139851216
@@ -59035,3 +59315,5 @@ SceneRoots:
   - {fileID: 1140393665}
   - {fileID: 1491992877}
   - {fileID: 1698823408}
+  - {fileID: 1272351570}
+  - {fileID: 1677882550}
