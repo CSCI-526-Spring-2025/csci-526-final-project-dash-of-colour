@@ -19,6 +19,23 @@ public class LeaderboardData
     public List<LeaderboardEntry> data;
 }
 
+[Serializable]
+public class DeathRecord
+{
+    // public string player_name;
+    public string level_name;
+    public float x_coordinate;
+    public float y_coordinate;
+    public float z_coordinate;
+}
+
+[Serializable]
+public class DeathRecords
+{
+    public List<DeathRecord> data;
+}
+
+
 public class Leaderboard : MonoBehaviour
 {
     [SerializeField] private string supabaseUrl = "https://pbzqzzgkpseijrjwickx.supabase.co";
@@ -58,6 +75,24 @@ public class Leaderboard : MonoBehaviour
     {
         StartCoroutine(PredictPlayerRank(level, time, callback));
     }
+    // New death tracking methods
+    public void SubmitDeath(string level, Vector3 deathPosition)
+    {
+        var death = new DeathRecord()
+        {
+            // player_name = playerName,
+            level_name = level,
+            x_coordinate = deathPosition.x,
+            y_coordinate = deathPosition.y,
+            z_coordinate = deathPosition.z
+        };
+        // string json = $"{{\"level_name\": \"{level}\",\"x_coordinate\": \"{deathPosition.x}\",\"y_coordinate\": \"{deathPosition.y}\",\"z_coordinate\": \"{deathPosition.z}}";
+        // string json = $"{{\"level_name\": \"{level}\",\"x_coordinate\": \"{deathPosition.x}\",\"y_coordinate\": \"{deathPosition.y}\",\"z_coordinate\": \"{deathPosition.z}\"}}";
+        string json = JsonUtility.ToJson(death);
+        // StartCoroutine(PostRequest("death_records", json));
+        StartCoroutine(PostRequest("death_records", json));
+    }
+    
 
     IEnumerator GetTopScores(string level, Action<List<LeaderboardEntry>> callback)
     {
@@ -79,6 +114,47 @@ public class Leaderboard : MonoBehaviour
             string json = "{\"data\":" + www.downloadHandler.text + "}";
             var entries = JsonUtility.FromJson<LeaderboardData>(json).data;
             callback?.Invoke(entries);
+        }
+    }
+
+    // IEnumerator PostDeath(string json)
+    // {
+    //     using UnityWebRequest www = new UnityWebRequest(supabaseUrl + "/rest/v1/deaths", "POST");
+    //     byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+    //     www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+    //     www.downloadHandler = new DownloadHandlerBuffer();
+    //     www.SetRequestHeader("Content-Type", "application/json");
+    //     www.SetRequestHeader("apikey", supabaseKey);
+    //     www.SetRequestHeader("Authorization", "Bearer " + supabaseKey);
+
+    //     yield return www.SendWebRequest();
+
+    //     if (www.result != UnityWebRequest.Result.Success)
+    //         UnityEngine.Debug.LogError($"Error uploading death: " + www.error);
+    //     else
+    //         UnityEngine.Debug.Log("Death recorded!");
+    // }
+    // Core request handlers (refactored for DRY principle)
+    IEnumerator PostRequest(string table, string json)
+    {
+        using UnityWebRequest www = new UnityWebRequest(supabaseUrl + "/rest/v1/"+ table, "POST");
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+        www.SetRequestHeader("Content-Type", "application/json");
+        www.SetRequestHeader("apikey", supabaseKey);
+        www.SetRequestHeader("Authorization", "Bearer " + supabaseKey);
+
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            UnityEngine.Debug.LogError($"Error uploading to {table}: " + www.error);
+            UnityEngine.Debug.LogError($"Server Response: {www.downloadHandler.text}");
+        }
+        else
+        {
+            UnityEngine.Debug.Log($"Data submitted to {table}!");
         }
     }
 

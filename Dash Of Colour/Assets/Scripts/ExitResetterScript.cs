@@ -1,4 +1,10 @@
 using UnityEngine;
+
+using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -10,6 +16,9 @@ public class ExitResetterScript : MonoBehaviour
     private Rigidbody playerRB;
     private Renderer playerRenderer;
     public PlayerController player_controls;
+
+    public Leaderboard leaderboard;
+    string sceneName;
 
     private float orig_Speed = 9.0f; //The original speed of the player car
     public float blinkDuration = 2f; 
@@ -29,6 +38,23 @@ public class ExitResetterScript : MonoBehaviour
 
         // Initial check point is the start point
         CheckPointData.currCheckPoint = new Vector3(startPosition.x, startPosition.y, 0);
+
+        // // leaderboard = FindObjectOfType<Leaderboard>();
+        // if (leaderboard == null)
+        // {
+        //     Debug.LogError("Leaderboard component not found in scene!");
+        // }
+
+        
+        // if (leaderboard == null)
+        // {
+        //     leaderboard = FindObjectOfType<Leaderboard>();
+        //     if (leaderboard == null)
+        //     {
+        //         Debug.LogError("Leaderboard not found in scene!");
+        //     }
+        // }
+
     }
 
     // Update is called once per frame
@@ -47,6 +73,14 @@ public class ExitResetterScript : MonoBehaviour
 
     void ResetPlayer()
     {
+        if (leaderboard == null)
+        {
+            leaderboard = FindObjectOfType<Leaderboard>();
+            if (leaderboard == null)
+            {
+                Debug.LogError("Leaderboard not found when trying to reset player!");
+            }
+        }
         StartCoroutine(FallThenReset());
     }
 
@@ -54,6 +88,17 @@ public class ExitResetterScript : MonoBehaviour
     {
         if (playerRB.CompareTag("Player"))
         {
+            // Capture death data before reset
+            Vector3 deathPosition = transform.position;
+            string currentLevel = SceneManager.GetActiveScene().name;
+
+            // Submit death to leaderboard if available
+            if (leaderboard != null)
+            {
+                leaderboard.SubmitDeath(currentLevel, deathPosition);
+                Debug.Log($"Death recorded in {currentLevel} at {deathPosition}");
+            }
+
             isFalling = true;
             player_controls.speed = 0.0f;   //Stop the player from controlling the car during the fall
 
